@@ -22,8 +22,8 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="w-full md:h-[6vh] h-[10vh] bg-black py-2 flex flex-col md:flex-row items-center justify-evenly text-white">
-        <div className="flex flex-row justify-end items-center gap-4 md:w-1/4">
+      <div className="w-full md:h-[6vh] h-[10vh] bg-black py-2 flex flex-col md:flex-row items-center xl:px-50 px-10 justify-between text-white">
+        <div className="flex flex-row justify-end items-center gap-4">
           <div className="flex flex-row items-center gap-2 text-xs md:text-sm">
             <GiPositionMarker size={25} />
             <span>indirizzo</span>
@@ -33,28 +33,28 @@ export default function Navbar() {
             <span>email</span>
           </div>
         </div>
-        <div className="flex flex-row justify-center items-center gap-4 text-xs md:text-sm md:w-1/2">
+        <div className="flex flex-row justify-center items-center gap-4 text-xs md:text-sm">
           Testo da decidere: es. Benvenuti da dimarco srl
         </div>
-        <div className="flex flex-row justify-start items-center md:w-1/4">
+        <div className="flex flex-row justify-start items-centerxs">
           <div className="flex flex-row items-center gap-2 text-xs md:text-sm">
             <FaRegClock size={25} />
             <span>Lunedì-Venerdì dalle 8:00 alle 18:00</span>
           </div>
         </div>
       </div>
-      <div className="w-full h-[12vh] flex flex-row items-center justify-between xl:px-0 px-10">
-        <div className="md:w-1/4 flex items-center justify-end">
+      <div className="w-full h-[12vh] flex flex-row items-center justify-between xl:px-50 px-10">
+        <div className=" flex items-center justify-end">
           <Image src={logo} alt="alt" width={200} height={400} />
         </div>
-        <div className="hidden xl:flex xl:flex-row xl:justify-center xl:items-center xl:gap-20 xl:text-lg xl:font-semibold xl:w-1/2">
+        <div className="hidden xl:flex flex-row justify-center items-center gap-20 text-lg font-semibold">
         <Link href="/">Home</Link>
           <Link href="/chisiamo">Chi Siamo</Link>
           <Link href="/prodotti">Prodotti</Link>
           <Link href="/lavori">Lavori</Link>
           <Link href="/contatti">Contatti</Link>
         </div>
-        <div className="hidden xl:flex flex-row justify-start items-center gap-10 text-xl font-semibold w-1/4">
+        <div className="hidden xl:flex flex-row justify-start items-center gap-10 text-xl font-semibold">
           <FaFacebook />
           <FaInstagram />
           <FaLinkedin />
@@ -66,12 +66,12 @@ export default function Navbar() {
         />
       </div>
       {mobileMenuOpened && (
-        <div className="flex flex-col h-screen absolute top-0 w-full xl:hidden bg-primary items-center justify-center gap-10 text-2xl font-semibold">
-          <Link href="/">Home</Link>
-          <Link href="/chisiamo">Chi Siamo</Link>
-          <Link href="/prodotti">Prodotti</Link>
-          <Link href="/lavori">Lavori</Link>
-          <Link href="/contatti">Contatti</Link>
+        <div className="flex flex-col h-screen absolute top-0 w-full xl:hidden bg-primary items-center justify-center gap-10 text-2xl font-semibold z-50">
+          <Link href="/" onClick={() => setMobileMenuOpened(false)}>Home</Link>
+          <Link href="/chisiamo" onClick={() => setMobileMenuOpened(false)}>Chi Siamo</Link>
+          <Link href="/prodotti" onClick={() => setMobileMenuOpened(false)}>Prodotti</Link>
+          <Link href="/lavori" onClick={() => setMobileMenuOpened(false)}>Lavori</Link>
+          <Link href="/contatti" onClick={() => setMobileMenuOpened(false)}>Contatti</Link>
           <FaTimes
             size={30}
             className="absolute top-3 right-3 hover:cursor-pointer p-1 border border-black rounded"

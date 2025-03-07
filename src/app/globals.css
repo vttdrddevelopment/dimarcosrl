@@ -28,4 +28,13 @@ body {
 
 .home {
   background-image: url("../../public/home.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services {
+  background-image: url("../../public/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

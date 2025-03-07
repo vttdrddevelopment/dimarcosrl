@@ -10,21 +10,21 @@ import { PiWindowsLogoFill } from "react-icons/pi";
 
 export default function Footer() {
   return (
-    <div className="w-full bg-black py-10 px-70 flex flex-col justify-center">
+    <div className="w-full bg-black py-10 xl:px-50 px-10 flex flex-col justify-center">
       <div className="flex flex-row justify-between items-center">
-        <h2 className="text-white text-[45px] font-bold w-1/3 leading-10">
+        <h2 className="text-white xl:text-[45px] md:text-[40px] text-[20px] font-bold xl:leading-10 leading-5">
           Let's made your custom product!
         </h2>
         <Link
           href="/contatti"
-          className="px-6 py-4 bg-white text-primary font-semibold z-20"
+          className="px-6 md:py-4 py-2 bg-white text-primary font-semibold z-20"
         >
           Contattaci
         </Link>
       </div>
       <hr className="mt-10 text-white" />
-      <div className="grid grid-cols-4 gap-20 mt-10">
-        <div className="flex flex-col gap-4">
+      <div className="grid lg:grid-cols-4 lg:gap-20 gap-10 mt-10">
+        <div className="flex flex-col gap-4 lg:items-start items-center">
           <Image src={logobianco} alt="alt" width={200} height={300} />
           <span className="text-white text-lg">
             Windows to the World, Doors to Your Dreams.
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-4 items-center">
           <span className="text-white font-bold text-2xl">Menù</span>
-          <div className="flex flex-col gap-1 text-lg text-white">
+          <div className="flex flex-col gap-1 text-lg text-white text-center">
             <Link href="/">Home</Link>
             <Link href="/chisiamo">Chi Siamo</Link>
             <Link href="/prodotti">Prodotti</Link>
@@ -45,9 +45,9 @@ export default function Footer() {
             <Link href="/contatti">Contatti</Link>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col lg:items-start items-center gap-4">
           <span className="text-white font-bold text-2xl">Contattaci</span>
-          <div className="flex flex-col gap-8 text-lg text-white">
+          <div className="flex flex-col lg:gap-8 gap-4 text-lg text-white">
             <div className="flex flex-row items-center gap-2">
               <MdMarkEmailUnread size={25} />
               <span>email@dimarcosrl.it</span>
@@ -62,7 +62,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <PiWindowsLogoFill size={250} className="text-white"/>
+        <div className="flex justify-center">
+          <PiWindowsLogoFill size={250} className="text-white"/>
+        </div>
       </div>
       <hr className="my-10 text-white" />
       <div className="flex flex-row justify-center items-center w-full text-white">
