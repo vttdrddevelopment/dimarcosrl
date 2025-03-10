@@ -1,29 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
-import lavoraconnoi1 from "../../../../public/lavoraConNoiImg1.jpg";
-import lavoraconnoi2 from "../../../../public/lavoraConNoiImg2.jpg";
+import lavoraconnoi1 from "../../../../public/lavoraconnoi1.png";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 
 export default function LavoraConNoi() {
   return (
     <div className="flex flex-col lg:flex-row justify-center gap-10 padding py-20">
       <div className="lg:w-1/2 flex justify-center items-center relative pt-10 pb-10">
-        <div className="lg:w-[80%] xl:w-[65%] w-full h-[450px] bg-primary rounded-tl-[100px] rounded-br-[100px] relative">
+      <Image
+            src={lavoraconnoi1}
+            alt="alt"
+            width={560}
+            height={500}
+          />
+          {/* <div className="bg-primary xl:w-[459px] w-[380px] rounded-tl-[100px] xl:h-[484px] h-[280px] rounded-br-[100px]"></div>
           <Image
             src={lavoraconnoi1}
             alt="alt"
-            width={310}
+            width={317}
             height={500}
-            className="rounded-t-full z-20 absolute top-[-80px] right-[-80px] border-4 border-white"
+            className="rounded-t-full w-2/3 lg:w-[250px] xl:w-[310px] z-20 absolute top-[-10px] right-8 border-4 border-white"
           />
           <Image
             src={lavoraconnoi2}
             alt="alt"
-            width={310}
+            width={317}
             height={500}
-            className="rounded-t-full z-10 absolute bottom-[-50px] left-0 border-4 border-white"
-          />
-        </div>
+            className="rounded-t-full w-2/3 lg:w-[250px] xl:w-[310px] z-10 absolute bottom-[-10px] xl:left-20 left-0 border-4 border-white"
+          /> */}
+
         {/* <Image
             src={about1}
             alt="alt"
@@ -83,18 +88,18 @@ export default function LavoraConNoi() {
           Scopri Di Più
         </Link>
         <div className="grid grid-cols-3 gap-10">
-            <div className="flex flex-col w-full border-r-2 border-gray-300">
-                <span className="text-xl font-bold">98%</span>
-                <span className="">Successful Client</span>
-            </div>
-            <div className="flex flex-col w-full border-r-2 border-gray-300">
-                <span className="text-xl font-bold">1,500+</span>
-                <span className="">Solutions Delivered</span>
-            </div>
-            <div className="flex flex-col w-full">
-                <span className="text-xl font-bold">12+</span>
-                <span className="">Years of Experience</span>
-            </div>
+          <div className="flex flex-col w-full border-r-2 border-gray-300">
+            <span className="text-xl font-bold">98%</span>
+            <span className="">Successful Client</span>
+          </div>
+          <div className="flex flex-col w-full border-r-2 border-gray-300">
+            <span className="text-xl font-bold">1,500+</span>
+            <span className="">Solutions Delivered</span>
+          </div>
+          <div className="flex flex-col w-full">
+            <span className="text-xl font-bold">12+</span>
+            <span className="">Years of Experience</span>
+          </div>
         </div>
       </div>
     </div>
