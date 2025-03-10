@@ -9,7 +9,7 @@ import { AiOutlineWindows } from "react-icons/ai";
 export default function About() {
   return (
     <>
-      <div className="flex flex-col lg:flex-row justify-center gap-10 xl:px-50 px-10 py-10">
+      <div className="flex flex-col lg:flex-row justify-center gap-10 padding py-10">
         <div className="lg:w-1/2 flex justify-center items-center relative pt-10">
           <Image
             src={about1}
@@ -71,7 +71,7 @@ export default function About() {
             </div>
             <Link
               href="/lavori"
-              className="px-3 py-3 w-[150px] bg-primary text-white font-semibold z-20 md:text-base text-sm"
+              className="px-3 py-3 w-[150px] text-center bg-primary text-white font-semibold z-20 md:text-base text-sm"
             >
               Scopri Di Più
             </Link>
@@ -81,7 +81,7 @@ export default function About() {
       <div className="lg:px-50 px-10 lg:py-5">
         <hr />
       </div>
-      <div className="grid lg:grid-cols-6 grid-cols-3 gap-10 xl:px-50 px-10 py-10">
+      <div className="grid lg:grid-cols-6 grid-cols-3 gap-10 padding py-10">
         <div className="flex flex-col gap-2 text-center items-center">
           <AiOutlineWindows size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">

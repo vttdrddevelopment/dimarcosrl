@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Services() {
   return (
-    <div className="w-full py-10 xl:px-50 px-10 flex flex-col justify-center lg:h-screen services relative">
+    <div className="w-full py-10 padding flex flex-col justify-center lg:h-screen services relative">
       <div className="absolute top-0 left-0 w-full lg:h-screen h-full bg-gray-300 opacity-65 z-10"></div>
       <div className="flex lg:flex-row flex-col justify-between items-center z-20">
         <div className="flex flex-col gap-4 justify-evenly lg:w-1/2">

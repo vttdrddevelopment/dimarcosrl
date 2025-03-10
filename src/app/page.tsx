@@ -5,6 +5,9 @@ import Link from "next/link";
 import Banner from "./components/home/Banner";
 import About from "./components/home/About";
 import Services from "./components/home/Services";
+import LavoraConNoi from "./components/home/LavoraConNoi";
+import Galleria from "./components/home/Galleria";
+import FAQ from "./components/home/FAQ";
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
         <Banner />
         <About />
         <Services />
+        <LavoraConNoi/>
+        <Galleria/>
+        <FAQ/>
       </main>
       <Footer />
     </>

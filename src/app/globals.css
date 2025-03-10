@@ -1,8 +1,17 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+@plugin "daisyui/theme"{
+  name: "mytheme";
+  default: true; /* set as default */
+  prefersdark: false; /* set as default dark mode (prefers-color-scheme:dark) */
+  color-scheme: light; /* color of browser-provided UI */
+  --color-primary: #f90202
 }
 
 @theme {
@@ -11,6 +20,12 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-primary: #f90202
+}
+
+@layer utilities {
+  .padding {
+    @apply xl:px-80 lg:px-50 px-10 ;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,6 +50,24 @@ body {
 
 .services {
   background-image: url("../../public/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galleria1 {
+  background-image: url("../../public/galleria1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galleria2 {
+  background-image: url("../../public/galleria2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galleria3 {
+  background-image: url("../../public/galleria3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
