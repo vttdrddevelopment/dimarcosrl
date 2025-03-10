@@ -43,7 +43,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="w-full h-[12vh] flex flex-row items-center justify-between xl:px-80 px-10">
+      <div className="w-full h-[12vh] flex flex-row items-center justify-between padding">
         <div className=" flex items-center justify-end">
           <Image src={logo} alt="alt" width={150} height={400} />
         </div>

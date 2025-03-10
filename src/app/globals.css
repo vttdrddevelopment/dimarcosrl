@@ -71,3 +71,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.unica {
+  background-image: url("../../public/background-unica.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

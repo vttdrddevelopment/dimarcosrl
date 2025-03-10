@@ -8,6 +8,7 @@ import Services from "./components/home/Services";
 import LavoraConNoi from "./components/home/LavoraConNoi";
 import Galleria from "./components/home/Galleria";
 import FAQ from "./components/home/FAQ";
+import Unica from "./components/home/Unica";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <About />
         <Services />
         <LavoraConNoi/>
+        <Unica/>
         <Galleria/>
         <FAQ/>
       </main>
