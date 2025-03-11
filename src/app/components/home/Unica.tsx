@@ -11,7 +11,7 @@ export default function Unica() {
       </div>
       <div className="relative lg:w-1/2 h-full w-full flex justify-center items-center">
       <iframe
-        src="https://player.vimeo.com/video/1064270242"
+        src="https://player.vimeo.com/video/1064584013"
         style={{
           position: "absolute",
           top: 0,
