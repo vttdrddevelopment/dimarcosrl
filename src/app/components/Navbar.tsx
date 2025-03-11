@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="w-full md:h-[6vh] h-[10vh] bg-black py-2 flex flex-col md:flex-row items-center padding justify-between text-white">
+      <div className="w-full font-[family-name:var(--font-plus-jakarta-sans)] md:h-[6vh] h-[10vh] bg-black py-2 flex flex-col md:flex-row items-center padding justify-between text-white">
         <div className="flex flex-row justify-end items-center gap-4">
           <div className="flex flex-row items-center gap-2 text-xs md:text-sm">
             <GiPositionMarker size={25} />
@@ -43,14 +43,14 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="w-full h-[12vh] flex flex-row items-center justify-between padding">
+      <div className="w-full h-[12vh] font-[family-name:var(--font-plus-jakarta-sans)] flex flex-row items-center justify-between padding">
         <div className=" flex items-center justify-end">
           <Image src={logo} alt="alt" width={150} height={400} />
         </div>
         <div className="hidden xl:flex flex-row justify-center items-center gap-10 text-lg font-semibold">
         <Link href="/">Home</Link>
           <Link href="/chisiamo">Chi Siamo</Link>
-          <Link href="/prodotti">Prodotti</Link>
+          <Link href="/servizi">Servizi</Link>
           <Link href="/lavori">Lavori</Link>
           <Link href="/contatti">Contatti</Link>
         </div>

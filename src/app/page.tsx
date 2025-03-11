@@ -13,8 +13,7 @@ import Unica from "./components/home/Unica";
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <main>
+      <main className="font-[family-name:var(--font-plus-jakarta-sans)]">
         <Banner />
         <About />
         <Services />
@@ -23,7 +22,6 @@ export default function Home() {
         <Galleria/>
         <FAQ/>
       </main>
-      <Footer />
     </>
   );
 }

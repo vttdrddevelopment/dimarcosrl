@@ -10,9 +10,9 @@ import { PiWindowsLogoFill } from "react-icons/pi";
 
 export default function Footer() {
   return (
-    <div className="w-full bg-black py-10 padding flex flex-col justify-center">
+    <div className="w-full bg-black py-10 padding flex flex-col justify-center font-[family-name:var(--font-plus-jakarta-sans)]">
       <div className="flex flex-row justify-between items-center">
-        <h2 className="text-white xl:text-[45px] md:text-[40px] text-[20px] font-bold xl:leading-10 leading-5">
+        <h2 className="text-white xl:text-[45px] md:text-[40px] text-[20px] font-extrabold xl:leading-10 leading-5">
           Let's made your custom product!
         </h2>
         <Link
@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="flex flex-col gap-1 text-lg text-white text-center">
             <Link href="/">Home</Link>
             <Link href="/chisiamo">Chi Siamo</Link>
-            <Link href="/prodotti">Prodotti</Link>
+            <Link href="/servizi">Servizi</Link>
             <Link href="/lavori">Lavori</Link>
             <Link href="/contatti">Contatti</Link>
           </div>

@@ -70,7 +70,7 @@ export default function About() {
               </div>
             </div>
             <Link
-              href="/lavori"
+              href="/chisiamo"
               className="px-3 py-3 w-[150px] text-center bg-primary text-white font-semibold z-20 md:text-base text-sm"
             >
               Scopri Di Più
