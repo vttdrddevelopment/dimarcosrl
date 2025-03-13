@@ -90,3 +90,39 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
 }
+
+.servizio1 {
+  background-image: url("../../public/servizio1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.servizio2 {
+  background-image: url("../../public/servizio2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.servizio3 {
+  background-image: url("../../public/servizio3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.servizio4 {
+  background-image: url("../../public/servizio4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.servizio5 {
+  background-image: url("../../public/servizio5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.servizio6 {
+  background-image: url("../../public/servizio6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
