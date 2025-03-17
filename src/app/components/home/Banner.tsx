@@ -1,6 +1,8 @@
 'use client'
 import Link from "next/link";
 import { useEffect } from "react";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import home from "../../../../public/home.png"
 
 export default function Banner() {
 //   useEffect(() => {
@@ -20,10 +22,15 @@ export default function Banner() {
 
   return (
     <>
-      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-start relative min-h-screen p-8 pb-20 gap-16 padding home">
-        <div className="absolute top-0 w-full h-screen bg-gradient-to-b from-red-900 to-gray-800 opacity-50 z-10"></div>
-        <main className="flex flex-col gap-8 row-start-2 items-start z-20">
-          <div className="flex flex-col w-3/4 gap-5">
+      <ParallaxBanner
+      layers={[
+        { image: '/home.png', speed: -10},
+      ]}
+      className="aspect-[2/1] h-screen"
+    >
+      <div className="absolute top-0 w-full h-screen bg-gradient-to-b from-red-900 to-gray-800 opacity-50 z-10 padding"></div>
+        <main className="absolute inset-0 flex items-center justify-start">
+          <div className="flex flex-col w-3/4 gap-5 padding">
             <span className="uppercase font-bold z-20 text-white md:text-base text-sm">
               Transform your home today
             </span>
@@ -50,7 +57,7 @@ export default function Banner() {
             </div>
           </div>
         </main>
-      </div>
+    </ParallaxBanner>
     </>
   );
 }

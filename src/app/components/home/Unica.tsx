@@ -1,6 +1,6 @@
 export default function Unica() {
   return (
-    <div className="flex lg:h-[60vh] h-[80vh] flex-col lg:flex-row justify-center gap-10 padding py-10 bg-fixed bg-primary unica">
+    <div className="flex lg:h-[60vh] h-[80vh] flex-col lg:flex-row justify-center gap-10 padding py-10 bg-primary unica">
       <div className="flex flex-col lg:w-1/2 justify-center lg:items-start items-center">
         <h1 className="xl:text-[120px] lg:text-[100px] md:text-[80px] text-[60px] uppercase text-white font-semibold">
           Unica
