@@ -20,7 +20,7 @@ export default function Banner() {
 
   return (
     <>
-      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-start relative min-h-screen p-8 pb-20 gap-16 padding home bg-fixed">
+      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-start relative min-h-screen p-8 pb-20 gap-16 padding home">
         <div className="absolute top-0 w-full h-screen bg-gradient-to-b from-red-900 to-gray-800 opacity-50 z-10"></div>
         <main className="flex flex-col gap-8 row-start-2 items-start z-20">
           <div className="flex flex-col w-3/4 gap-5">
