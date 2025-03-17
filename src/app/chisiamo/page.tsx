@@ -97,7 +97,7 @@ export default function ChiSiamo() {
           </div>
         </div>
       </div>
-      <div className="w-full relative chisiamo1 h-[50vh] z-10 bg-fixed bg-cover ">
+      <div className="w-full relative chisiamo1 h-[50vh] z-10 bg-cover ">
         <div className="absolute top-0 w-full h-[50vh] bg-gradient-to-b from-red-900 to-gray-800 opacity-50 z-10"></div>
       </div>
       {/* name of each tab group should be unique */}
