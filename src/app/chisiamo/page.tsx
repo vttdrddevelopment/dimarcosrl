@@ -15,10 +15,13 @@ import { CgLayoutGridSmall } from "react-icons/cg";
 import { BiSolidGrid } from "react-icons/bi";
 import LavoraConNoi from "../components/home/LavoraConNoi";
 
+import homebg from "../../../public/home.jpg"
+
 export default function ChiSiamo() {
   return (
     <div className="font-[family-name:var(--font-plus-jakarta-sans)]">
       <div className="grid grid-rows-[20px_1fr_20px] relative h-[50vh] p-8 pb-20 gap-16 padding chisiamo">
+      <Image src={homebg} alt="alt" layout="fill" objectFit="cover" objectPosition="bottom"  className="w-full absolute top-0 h-[50vh]"/>
         <div className="absolute top-0 w-full h-[50vh] bg-gradient-to-b from-red-900 to-gray-800 opacity-50 z-10"></div>
         <div className="flex flex-col gap-4 justify-center items-center w-full h-[50vh]">
           <h1 className="text-white font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10">
@@ -102,43 +105,57 @@ export default function ChiSiamo() {
       </div>
       {/* name of each tab group should be unique */}
       <div className="w-full flex flex-row justify-center padding">
-        <div className="tabs tabs-border rounded bg-gradient-to-b from-white to-gray-300 w-full mt-[-200px] relative z-20">
+        <div className="tabs tabs-border rounded bg-white shadow-xl w-full mt-[-200px] relative z-20">
           <label className="tab w-1/3 flex xl:flex-row flex-col items-center">
             <input type="radio" name="my_tabs_4" />
             <GiDiceTarget size={20} className="xl:mr-2" />
-            <span className="xl:text-base text-xs font-extrabold">Our Mission</span>
+            <span className="xl:text-base text-xs font-extrabold">
+              Missione
+            </span>
           </label>
           <div className="tab-content xl:p-10 p-5">
             <div className="flex xl:flex-row flex-col items-center gap-10">
               <div className="flex flex-col gap-4">
                 <span className="xl:text-base text-xs">
-                  Our mission is to transform the factory and industry sectors
-                  through sustainable practices, innovation, and advanced
-                  technology, fostering growth that benefits both business and
-                  the environment.
+                  La nostra missione è quella di trasformare i settori della
+                  fabbrica e dell'industria attraverso pratiche sostenibili,
+                  innovazione e tecnologia avanzata, promuovendo una crescita
+                  che vada a vantaggio sia dell'azienda che dell'ambiente.
                 </span>
                 <div className="flex flex-row items-center gap-4 justify-start">
-                  <IoCheckmarkDoneCircle size={20} className="text-primary w-fit" />
+                  <IoCheckmarkDoneCircle
+                    size={20}
+                    className="text-primary w-fit"
+                  />
                   <span className="xl:text-base text-xs w-fit">
-                  Sustainable Manufacturing Practices
+                    Produzione sostenibile
                   </span>
                 </div>
                 <div className="flex flex-row items-center gap-4 justify-start">
-                  <IoCheckmarkDoneCircle size={20} className="text-primary w-fit" />
+                  <IoCheckmarkDoneCircle
+                    size={20}
+                    className="text-primary w-fit"
+                  />
                   <span className="xl:text-base text-xs w-fit">
-                  Advanced Technology Integration
+                    Integrazione tecnologica avanzata
                   </span>
                 </div>
                 <div className="flex flex-row items-center gap-4 justify-start">
-                  <IoCheckmarkDoneCircle size={20} className="text-primary w-fit" />
+                  <IoCheckmarkDoneCircle
+                    size={20}
+                    className="text-primary w-fit"
+                  />
                   <span className="xl:text-base text-xs w-fit">
-                  Community Environmental Responsibility
+                    Responsabilità ambientale della comunità
                   </span>
                 </div>
                 <div className="flex flex-row items-center gap-4 justify-start">
-                  <IoCheckmarkDoneCircle size={20} className="text-primary w-fit" />
+                  <IoCheckmarkDoneCircle
+                    size={20}
+                    className="text-primary w-fit"
+                  />
                   <span className="xl:text-base text-xs w-fit">
-                  Innovation-Driven Growth
+                    Crescita guidata dall'innovazione
                   </span>
                 </div>
               </div>
@@ -149,39 +166,51 @@ export default function ChiSiamo() {
           <label className="tab w-1/3 flex xl:flex-row flex-col items-center">
             <input type="radio" name="my_tabs_4" defaultChecked />
             <BiSolidGrid size={20} className="xl:mr-2" />
-            <span className="xl:text-base text-xs font-extrabold">Our Vision</span>
+            <span className="xl:text-base text-xs font-extrabold">Visione</span>
           </label>
           <div className="tab-content p-10">
             <div className="flex xl:flex-row flex-col items-center gap-10">
               <div className="flex flex-col gap-4">
                 <span className="xl:text-base text-xs">
-                  Our mission is to transform the factory and industry sectors
-                  through sustainable practices, innovation, and advanced
-                  technology, fostering growth that benefits both business and
-                  the environment.
+                  La nostra visione è quella di trasformare i settori della
+                  fabbrica e dell'industria attraverso pratiche sostenibili,
+                  innovazione e tecnologie avanzate, promuovendo una crescita
+                  che avvantaggi sia l'azienda che l'ambiente.
                 </span>
                 <div className="flex flex-row items-center gap-4 justify-start">
-                  <IoCheckmarkDoneCircle size={20} className="text-primary w-fit" />
+                  <IoCheckmarkDoneCircle
+                    size={20}
+                    className="text-primary w-fit"
+                  />
                   <span className="xl:text-base text-xs w-fit">
-                  Sustainable Manufacturing Practices
+                    Produzione sostenibile
                   </span>
                 </div>
                 <div className="flex flex-row items-center gap-4 justify-start">
-                  <IoCheckmarkDoneCircle size={20} className="text-primary w-fit" />
+                  <IoCheckmarkDoneCircle
+                    size={20}
+                    className="text-primary w-fit"
+                  />
                   <span className="xl:text-base text-xs w-fit">
-                  Advanced Technology Integration
+                    Integrazione tecnologica avanzata
                   </span>
                 </div>
                 <div className="flex flex-row items-center gap-4 justify-start">
-                  <IoCheckmarkDoneCircle size={20} className="text-primary w-fit" />
+                  <IoCheckmarkDoneCircle
+                    size={20}
+                    className="text-primary w-fit"
+                  />
                   <span className="xl:text-base text-xs w-fit">
-                  Community Environmental Responsibility
+                    Responsabilità ambientale della comunità
                   </span>
                 </div>
                 <div className="flex flex-row items-center gap-4 justify-start">
-                  <IoCheckmarkDoneCircle size={20} className="text-primary w-fit" />
+                  <IoCheckmarkDoneCircle
+                    size={20}
+                    className="text-primary w-fit"
+                  />
                   <span className="xl:text-base text-xs w-fit">
-                  Innovation-Driven Growth
+                    Crescita guidata dall'innovazione
                   </span>
                 </div>
               </div>
@@ -192,39 +221,53 @@ export default function ChiSiamo() {
           <label className="tab w-1/3 flex xl:flex-row flex-col items-center">
             <input type="radio" name="my_tabs_4" />
             <IoDiamondOutline size={20} className="xl:mr-2" />
-            <span className="xl:text-base text-xs font-extrabold">Our Value</span>
+            <span className="xl:text-base text-xs font-extrabold">
+              Our Value
+            </span>
           </label>
           <div className="tab-content p-10">
             <div className="flex xl:flex-row flex-col items-center gap-10">
               <div className="flex flex-col gap-4">
                 <span className="xl:text-base text-xs">
-                  Our mission is to transform the factory and industry sectors
-                  through sustainable practices, innovation, and advanced
-                  technology, fostering growth that benefits both business and
-                  the environment.
+                Il nostro valore è quello di trasformare i settori della
+                  fabbrica e dell'industria attraverso pratiche sostenibili,
+                  innovazione e tecnologie avanzate, promuovendo una crescita
+                  che avvantaggi sia l'azienda che l'ambiente.
                 </span>
                 <div className="flex flex-row items-center gap-4 justify-start">
-                  <IoCheckmarkDoneCircle size={20} className="text-primary w-fit" />
+                  <IoCheckmarkDoneCircle
+                    size={20}
+                    className="text-primary w-fit"
+                  />
                   <span className="xl:text-base text-xs w-fit">
-                  Sustainable Manufacturing Practices
+                    Produzione sostenibile
                   </span>
                 </div>
                 <div className="flex flex-row items-center gap-4 justify-start">
-                  <IoCheckmarkDoneCircle size={20} className="text-primary w-fit" />
+                  <IoCheckmarkDoneCircle
+                    size={20}
+                    className="text-primary w-fit"
+                  />
                   <span className="xl:text-base text-xs w-fit">
-                  Advanced Technology Integration
+                    Integrazione tecnologica avanzata
                   </span>
                 </div>
                 <div className="flex flex-row items-center gap-4 justify-start">
-                  <IoCheckmarkDoneCircle size={20} className="text-primary w-fit" />
+                  <IoCheckmarkDoneCircle
+                    size={20}
+                    className="text-primary w-fit"
+                  />
                   <span className="xl:text-base text-xs w-fit">
-                  Community Environmental Responsibility
+                    Responsabilità ambientale della comunità
                   </span>
                 </div>
                 <div className="flex flex-row items-center gap-4 justify-start">
-                  <IoCheckmarkDoneCircle size={20} className="text-primary w-fit" />
+                  <IoCheckmarkDoneCircle
+                    size={20}
+                    className="text-primary w-fit"
+                  />
                   <span className="xl:text-base text-xs w-fit">
-                  Innovation-Driven Growth
+                    Crescita guidata dall'innovazione
                   </span>
                 </div>
               </div>
@@ -233,7 +276,7 @@ export default function ChiSiamo() {
           </div>
         </div>
       </div>
-      <LavoraConNoi/>
+      <LavoraConNoi />
     </div>
   );
 }

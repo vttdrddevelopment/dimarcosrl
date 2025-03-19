@@ -19,9 +19,9 @@ export default function About() {
             className="rounded-t-full z-10"
           />
           <div className="absolute bottom-10 right-20 z-20 gap-2 flex flex-col border-10 border-white rounded-t-full items-center p-10 bg-primary">
-            <span className="text-5xl font-bold text-white">70%</span>
+            <span className="text-5xl font-bold text-white">98%</span>
             <span className="font-bold text-white text-center">
-              Happy <br /> Customer
+              Clienti <br /> Contenti
             </span>
           </div>
           <PiWindowsLogoFill
@@ -34,25 +34,26 @@ export default function About() {
             Chi Siamo
           </span>
           <h1 className="font-bold xl:text-[53px] lg:text-[50px] md:text-[40px] text-[30px] xl:leading-14 lg:leading-12 leading-8">
-            Expertise in windows & door for every style
+            Competenza in finestre e porte per ogni stile
           </h1>
           <span className="md:text-base text-sm">
-            Partner with a company dedicated to excellence in window and door
-            installations, ensuring each project is handled with precision and
-            care. Our commitment is to provide installations that not only meet
-            but exceed your expectations.
+            Collabora con un'azienda dedita all'eccellenza nelle installazioni
+            di finestre e porte, assicurandoti che ogni progetto venga gestito
+            con precisione e cura. Il nostro impegno è quello di fornire
+            installazioni che non solo soddisfino ma superino le tue
+            aspettative.
           </span>
           <div className="flex flex-col gap-4">
             <div className="flex lg:flex-row flex-col lg:items-center gap-4 justify-center">
               <LiaWindows size={80} className="text-primary" />
               <div className="flex flex-col gap-2">
                 <span className="lg:text-3xl text-2xl font-bold">
-                  Our Mission
+                  La nostra missione
                 </span>
                 <span className="lg:text-base text-sm">
-                  We aim to transform homes and businesses with high-quality
-                  window and door solutions that enhance aesthetics, improve
-                  energy efficiency.
+                  Miriamo a trasformare case e aziende con soluzioni di porte e
+                  finestre di alta qualità che migliorino l'estetica e
+                  migliorino l'efficienza energetica.
                 </span>
               </div>
             </div>
@@ -60,12 +61,12 @@ export default function About() {
               <LiaWindows size={80} className="text-primary" />
               <div className="flex flex-col gap-2">
                 <span className="lg:text-3xl text-2xl font-bold">
-                  Our Vision
+                  La nostra visione
                 </span>
                 <span className="lg:text-base text-sm">
-                  We believe in integrity and sustainability. Our focus is on
-                  delivering not just products but solutions that improve homes,
-                  reduce energy.
+                  Crediamo nell'integrità e nella sostenibilità. Il nostro
+                  obiettivo è fornire non solo prodotti, ma soluzioni che
+                  migliorino le case e riducano il dispendio di energia.
                 </span>
               </div>
             </div>
@@ -85,37 +86,37 @@ export default function About() {
         <div className="flex flex-col gap-2 text-center items-center">
           <AiOutlineWindows size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
-            Energy Saving Technologies
+            Risparmio energetico
           </span>
         </div>
         <div className="flex flex-col gap-2 text-center items-center">
           <AiOutlineWindows size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
-            Excellent Sound Insulation
+            Ottimo isolamento acustico
           </span>
         </div>
         <div className="flex flex-col gap-2 text-center items-center">
           <AiOutlineWindows size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
-            High Light Trans-Mitions
+            Elevata trasmissione della luce
           </span>
         </div>
         <div className="flex flex-col gap-2 text-center items-center">
           <AiOutlineWindows size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
-            Durability 10 Years Warranty
+            Durata 10 anni di garanzia
           </span>
         </div>
         <div className="flex flex-col gap-2 text-center items-center">
           <AiOutlineWindows size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
-            Eco - Friendly Materials
+            Materiali ecologici
           </span>
         </div>
         <div className="flex flex-col gap-2 text-center items-center">
           <AiOutlineWindows size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
-            Modern Thoughtful Design
+            Design moderno e ponderato
           </span>
         </div>
       </div>

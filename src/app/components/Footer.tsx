@@ -3,7 +3,12 @@ import Image from "next/image";
 
 import logobianco from "../../../public/logobianco.png";
 import finestra from "../../../public/finsestra.png";
-import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneVolume } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaPhoneVolume,
+} from "react-icons/fa";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { GiPositionMarker } from "react-icons/gi";
 import { PiWindowsLogoFill } from "react-icons/pi";
@@ -13,7 +18,7 @@ export default function Footer() {
     <div className="w-full bg-black py-10 padding flex flex-col justify-center font-[family-name:var(--font-plus-jakarta-sans)]">
       <div className="flex flex-row justify-between items-center">
         <h2 className="text-white xl:text-[45px] md:text-[40px] text-[20px] font-extrabold xl:leading-10 leading-5">
-          Let's made your custom product!
+          Realizziamo il tuo prodotto personalizzato!
         </h2>
         <Link
           href="/contatti"
@@ -27,7 +32,7 @@ export default function Footer() {
         <div className="flex flex-col gap-4 lg:items-start items-center">
           <Image src={logobianco} alt="alt" width={200} height={300} />
           <span className="text-white text-lg">
-            Windows to the World, Doors to Your Dreams.
+            Finestre sul mondo, porte sui tuoi sogni.
           </span>
           <div className="flex flex-row justify-start items-center gap-10 text-xl font-semibold">
             <FaFacebook className="text-white" size={25} />
@@ -63,7 +68,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex justify-center">
-          <PiWindowsLogoFill size={250} className="text-white"/>
+          <PiWindowsLogoFill size={250} className="text-white" />
         </div>
       </div>
       <hr className="my-10 text-gray-900" />

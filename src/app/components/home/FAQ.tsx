@@ -14,15 +14,15 @@ export default function FAQ() {
       </div>
       <div className="flex flex-col justify-evenly lg:w-1/2">
         <span className="uppercase font-bold text-white md:text-base text-sm">
-          FREQUENTLY ASKED QUESTIONS
+          DOMANDE FREQUENTI
         </span>
         <h1 className="font-bold xl:text-[53px] text-white lg:text-[50px] md:text-[40px] text-[30px] xl:leading-14 lg:leading-12 leading-8">
-          Answers to your most asked questions
+        Risposte alle tue domande più frequenti
         </h1>
         <div className="collapse collapse-plus text-white border-b rounded-[0px] border-base-300">
           <input type="radio" name="my-accordion-3" defaultChecked />
           <div className="collapse-title lg:text-2xl font-semibold">
-            1. What types of windows do you offer?
+            1. Che tipi di finestre offrite?
           </div>
           <div className="collapse-content text-sm">
           We offer a wide variety of windows, including double-hung, casement, sliding, bay, and custom-designed windows.
@@ -31,7 +31,7 @@ export default function FAQ() {
         <div className="collapse collapse-plus text-white border-b rounded-[0px] border-base-300">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title lg:text-2xl font-semibold">
-          2. How long does window installation take?
+          2. Quanto tempo richiede l'installazione delle finestre?
           </div>
           <div className="collapse-content text-sm">
           We offer a wide variety of windows, including double-hung, casement, sliding, bay, and custom-designed windows.
@@ -40,7 +40,7 @@ export default function FAQ() {
         <div className="collapse collapse-plus text-white border-b rounded-[0px] border-base-300">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title lg:text-2xl font-semibold">
-          3. Are your windows energy-efficient?
+          3. Le vostre finestre sono a risparmio energetico?
           </div>
           <div className="collapse-content text-sm">
           We offer a wide variety of windows, including double-hung, casement, sliding, bay, and custom-designed windows.
@@ -49,7 +49,7 @@ export default function FAQ() {
         <div className="collapse collapse-plus text-white border-b rounded-[0px] border-base-300">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title lg:text-2xl font-semibold">
-          4. Do you offer custom window and door sizes?
+          4. Offrite dimensioni personalizzate per finestre e porte?
           </div>
           <div className="collapse-content text-sm">
           We offer a wide variety of windows, including double-hung, casement, sliding, bay, and custom-designed windows.
@@ -58,7 +58,7 @@ export default function FAQ() {
         <div className="collapse collapse-plus text-white border-b rounded-[0px] border-base-300">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title lg:text-2xl font-semibold">
-          5. How do I maintain my windows and doors?
+          5. Che tipo di manutenzione è richiesta per le mie finestre e porte?
           </div>
           <div className="collapse-content text-sm">
           We offer a wide variety of windows, including double-hung, casement, sliding, bay, and custom-designed windows.

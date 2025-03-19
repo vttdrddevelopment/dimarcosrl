@@ -42,7 +42,7 @@ body {
 }
 
 .home {
-  background-image: url("../../public/home.png");
+  background-image: url("../../public/home.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,7 +73,7 @@ body {
 }
 
 .unica {
-  background-image: url("../../public/background-unica.png");
+  background-image: url("../../public/background-unica.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

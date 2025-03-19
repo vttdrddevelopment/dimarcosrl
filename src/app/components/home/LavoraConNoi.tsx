@@ -7,13 +7,8 @@ export default function LavoraConNoi() {
   return (
     <div className="flex flex-col lg:flex-row justify-center gap-10 padding py-20">
       <div className="lg:w-1/2 flex justify-center items-center relative pt-10 pb-10">
-      <Image
-            src={lavoraconnoi1}
-            alt="alt"
-            width={560}
-            height={500}
-          />
-          {/* <div className="bg-primary xl:w-[459px] w-[380px] rounded-tl-[100px] xl:h-[484px] h-[280px] rounded-br-[100px]"></div>
+        <Image src={lavoraconnoi1} alt="alt" width={560} height={500} />
+        {/* <div className="bg-primary xl:w-[459px] w-[380px] rounded-tl-[100px] xl:h-[484px] h-[280px] rounded-br-[100px]"></div>
           <Image
             src={lavoraconnoi1}
             alt="alt"
@@ -52,32 +47,36 @@ export default function LavoraConNoi() {
           Lavora con noi
         </span>
         <h1 className="font-bold xl:text-[53px] lg:text-[50px] md:text-[40px] text-[30px] xl:leading-14 lg:leading-12 leading-8">
-          Why we’re the right choice for your home
+          Perché siamo la scelta giusta per la tua casa
         </h1>
         <span className="md:text-base text-sm">
-          Partner with a company dedicated to excellence in window and door
-          installations, ensuring each project is handled with precision and
-          care.
+          Collabora con un'azienda dedita all'eccellenza nelle installazioni di
+          finestre e porte, assicurandoti che ogni progetto venga gestito con
+          precisione e cura.
         </span>
         <div className="flex flex-col gap-4">
           <div className="grid grid-cols-2">
             <div className="flex flex-row items-center gap-4 justify-start">
               <IoCheckmarkDoneCircle size={25} className="text-primary" />
-              <span className="md:text-base text-sm">Unmatched Quality</span>
+              <span className="md:text-base text-sm">Qualità senza pari</span>
             </div>
             <div className="flex flex-row items-center gap-4 justify-start">
               <IoCheckmarkDoneCircle size={25} className="text-primary" />
-              <span className="md:text-base text-sm">Expert Craftsmanship</span>
+              <span className="md:text-base text-sm">Artigianato esperto</span>
             </div>
           </div>
           <div className="grid grid-cols-2">
             <div className="flex flex-row items-center gap-4 justify-start">
               <IoCheckmarkDoneCircle size={25} className="text-primary" />
-              <span className="md:text-base text-sm">Customized Solutions</span>
+              <span className="md:text-base text-sm">
+                Soluzioni personalizzate
+              </span>
             </div>
             <div className="flex flex-row items-center gap-4 justify-start">
               <IoCheckmarkDoneCircle size={25} className="text-primary" />
-              <span className="md:text-base text-sm">Energy Efficiency</span>
+              <span className="md:text-base text-sm">
+                Efficienza energetica
+              </span>
             </div>
           </div>
         </div>
@@ -90,15 +89,15 @@ export default function LavoraConNoi() {
         <div className="grid grid-cols-3 md:gap-10 gap-4">
           <div className="flex flex-col w-full border-r-2 border-gray-300">
             <span className="md:text-xl font-bold">98%</span>
-            <span className="md:text-base text-sm">Successful Client</span>
+            <span className="md:text-base text-sm">Clineti contenti</span>
           </div>
           <div className="flex flex-col w-full border-r-2 border-gray-300">
             <span className="md:text-xl font-bold">1,500+</span>
-            <span className="md:text-base text-sm">Solutions Delivered</span>
+            <span className="md:text-base text-sm">Soluzioni fornite</span>
           </div>
           <div className="flex flex-col w-full">
-            <span className="md:text-xl font-bold">12+</span>
-            <span className="md:text-base text-sm">Years of Experience</span>
+            <span className="md:text-xl font-bold">30+</span>
+            <span className="md:text-base text-sm">Anni di esperienza</span>
           </div>
         </div>
       </div>

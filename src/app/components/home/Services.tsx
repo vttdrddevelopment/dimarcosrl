@@ -1,11 +1,13 @@
 import { LiaWindows } from "react-icons/lia";
+import background from "../../../../public/background.jpg"
 import service1 from "../../../../public/service1.png";
 
 import Image from "next/image";
 
 export default function Services() {
   return (
-    <div className="w-full py-10 padding flex flex-col justify-center lg:h-screen services relative">
+    <div className="w-full py-10 padding flex flex-col justify-center lg:h-screen relative">
+      <Image src={background} alt="alt" layout="fill" objectFit="cover"  className="w-full absolute top-0 h-screen"/>
       <div className="absolute top-0 left-0 w-full lg:h-screen h-full bg-gray-300 opacity-65 z-10"></div>
       <div className="flex lg:flex-row flex-col justify-between items-center z-20">
         <div className="flex flex-col gap-4 justify-evenly lg:w-1/2">
@@ -13,13 +15,13 @@ export default function Services() {
             I nostri servizi
           </span>
           <h1 className="font-bold xl:text-[53px] lg:text-[50px] md:text-[40px] text-[30px] xl:leading-14 lg:leading-12 leading-8">
-            Comprehensive window & door services
+            Servizi completi per finestre e porte
           </h1>
         </div>
         <span className="md:text-base text-sm lg:w-1/2 mt-6 lg:mt-0">
-          Partner with a company dedicated to excellence in window and door
-          installations, ensuring each project is handled with precision and
-          care.
+          Collabora con un'azienda dedita all'eccellenza nelle installazioni di
+          finestre e porte, assicurandoti che ogni progetto venga gestito con
+          precisione e cura.
         </span>
       </div>
       <div className="grid lg:grid-cols-3 items-center gap-10 mt-20 z-20">
@@ -28,10 +30,11 @@ export default function Services() {
             <LiaWindows size={80} className="text-primary" />
             <div className="flex flex-col gap-2 w-4/5">
               <span className="lg:text-xl text-xl font-bold">
-                Custom Window Installation
+                Installazione di finestre personalizzate
               </span>
               <span className="lg:text-base text-sm">
-                Expertly crafted windows tailored to your specific needs.
+                Finestre realizzate da esperti, su misura per le vostre
+                esigenze.
               </span>
             </div>
           </div>
@@ -40,10 +43,11 @@ export default function Services() {
             <LiaWindows size={80} className="text-primary" />
             <div className="flex flex-col gap-2 w-4/5">
               <span className="lg:text-xl text-xl font-bold">
-                Door Installation & Replacement
+                Installazione e sostituzione porte
               </span>
               <span className="lg:text-base text-sm">
-                High-quality doors designed for security and style.
+                Porte di alta qualità progettate per garantire sicurezza e
+                stile.
               </span>
             </div>
           </div>
@@ -52,10 +56,11 @@ export default function Services() {
             <LiaWindows size={80} className="text-primary" />
             <div className="flex flex-col gap-2 w-4/5">
               <span className="lg:text-xl text-xl font-bold">
-                Energy-Efficient Solutions
+                Soluzioni ad alta efficienza energetica
               </span>
               <span className="lg:text-base text-sm">
-                Windows and doors that enhance energy savings, year-round.
+                Finestre e porte che aumentano il risparmio energetico, tutto
+                l'anno.
               </span>
             </div>
           </div>
@@ -68,10 +73,11 @@ export default function Services() {
             <LiaWindows size={80} className="text-primary" />
             <div className="flex flex-col gap-2 w-4/5">
               <span className="lg:text-2xl text-xl font-bold">
-              Window & Door Repair
+                Riparazione di finestre e porte
               </span>
               <span className="lg:text-base text-sm">
-              Reliable repairs ensuring long-lasting functionality and aesthetics.
+                Riparazioni affidabili che garantiscono funzionalità ed estetica
+                durature.
               </span>
             </div>
           </div>
@@ -80,10 +86,10 @@ export default function Services() {
             <LiaWindows size={80} className="text-primary" />
             <div className="flex flex-col gap-2 w-4/5">
               <span className="lg:text-2xl text-xl font-bold">
-              Consultation & Design Services
+              Servizi di consulenza e progettazione
               </span>
               <span className="lg:text-base text-sm">
-              Personalized guidance to match your home's unique style.
+              Consulenza personalizzata per adattare lo stile unico della tua casa.
               </span>
             </div>
           </div>
@@ -92,10 +98,10 @@ export default function Services() {
             <LiaWindows size={80} className="text-primary" />
             <div className="flex flex-col gap-2 w-4/5">
               <span className="lg:text-2xl text-xl font-bold">
-              Commercial Windows & Doors
+              Finestre e porte commerciali
               </span>
               <span className="lg:text-base text-sm">
-              Commercial Windows & Doors
+              Soluzioni durevoli ed efficienti per aziende di tutte le dimensioni.
               </span>
             </div>
           </div>
