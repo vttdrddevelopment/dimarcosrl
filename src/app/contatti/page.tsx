@@ -64,7 +64,7 @@ export default function page() {
           </Link>
         </div>
       </div>
-      <div className="xl:relative w-full xl:h-[90vh]">
+      <div className="xl:relative w-full xl:h-[90vh] pb-10">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d47349.63158281101!2d14.26296909345377!3d42.1213476310926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1330f97eaf4732fd%3A0x1d18aae22aa2e2a3!2sVia%20Selva%20Piana%2C%2057%2C%2066043%20Casoli%20CH!3m2!1d42.121355!2d14.3041685!5e0!3m2!1sen!2sit!4v1742375839748!5m2!1sen!2sit"
           loading="lazy"
