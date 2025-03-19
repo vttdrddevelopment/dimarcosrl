@@ -87,18 +87,18 @@ export default function LavoraConNoi() {
         >
           Scopri Di Più
         </Link>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-3 md:gap-10 gap-4">
           <div className="flex flex-col w-full border-r-2 border-gray-300">
-            <span className="text-xl font-bold">98%</span>
-            <span className="">Successful Client</span>
+            <span className="md:text-xl font-bold">98%</span>
+            <span className="md:text-base text-sm">Successful Client</span>
           </div>
           <div className="flex flex-col w-full border-r-2 border-gray-300">
-            <span className="text-xl font-bold">1,500+</span>
-            <span className="">Solutions Delivered</span>
+            <span className="md:text-xl font-bold">1,500+</span>
+            <span className="md:text-base text-sm">Solutions Delivered</span>
           </div>
           <div className="flex flex-col w-full">
-            <span className="text-xl font-bold">12+</span>
-            <span className="">Years of Experience</span>
+            <span className="md:text-xl font-bold">12+</span>
+            <span className="md:text-base text-sm">Years of Experience</span>
           </div>
         </div>
       </div>

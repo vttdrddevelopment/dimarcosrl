@@ -18,6 +18,7 @@ import { GiDiceTarget } from "react-icons/gi";
 import { CgLayoutGridSmall } from "react-icons/cg";
 import { BiSolidGrid } from "react-icons/bi";
 import LavoraConNoi from "../components/home/LavoraConNoi";
+import Services from "../components/home/Services";
 
 export default function Servizi() {
   return (
@@ -60,7 +61,7 @@ export default function Servizi() {
           <span className="absolute bottom-2 w-full text-center left-1/2 -translate-1/2 text-xl text-white font-extrabold z-20">Custom Window Installation</span>
         </div>
       </div>
-      <LavoraConNoi/>
+      <Services/>
     </div>
   );
 }

@@ -26,15 +26,24 @@ export default function Navbar() {
         <div className="flex flex-row justify-end items-center gap-4">
           <div className="flex flex-row items-center gap-2 text-xs md:text-sm">
             <GiPositionMarker size={25} />
-            <span>indirizzo</span>
+            <Link
+              className="hover:underline"
+              href="https://maps.app.goo.gl/8GcaRzc337HLzfiBA"
+              target="blank"
+            >
+              Via Selva Piana, 57, 66043 Casoli CH
+            </Link>
           </div>
-          <div className="flex flex-row items-center gap-2 text-xs md:text-sm">
+          {/* <div className="flex flex-row items-center gap-2 text-xs md:text-sm">
             <MdMarkEmailUnread size={25} />
             <span>email</span>
-          </div>
+          </div> */}
         </div>
-        <div className="flex flex-row justify-center items-center gap-4 text-xs md:text-sm">
-          Testo da decidere: es. Benvenuti da dimarco srl
+        <div className="flex flex-row items-center gap-2 text-xs md:text-sm">
+          <MdMarkEmailUnread size={25} />
+          <Link href="mailto:info@dimarcosrl.it" className="hover:underline">
+            info@dimarcosrl.it
+          </Link>
         </div>
         <div className="flex flex-row justify-start items-centerxs">
           <div className="flex flex-row items-center gap-2 text-xs md:text-sm">
@@ -48,7 +57,7 @@ export default function Navbar() {
           <Image src={logo} alt="alt" width={150} height={400} />
         </div>
         <div className="hidden xl:flex flex-row justify-center items-center gap-10 text-lg font-semibold">
-        <Link href="/">Home</Link>
+          <Link href="/">Home</Link>
           <Link href="/chisiamo">Chi Siamo</Link>
           <Link href="/servizi">Servizi</Link>
           <Link href="/lavori">Lavori</Link>
@@ -67,21 +76,31 @@ export default function Navbar() {
       </div>
       {mobileMenuOpened && (
         <div className="flex flex-col h-screen absolute top-0 w-full xl:hidden bg-primary items-center justify-center gap-10 text-2xl font-semibold z-50">
-          <Link href="/" onClick={() => setMobileMenuOpened(false)}>Home</Link>
-          <Link href="/chisiamo" onClick={() => setMobileMenuOpened(false)}>Chi Siamo</Link>
-          <Link href="/prodotti" onClick={() => setMobileMenuOpened(false)}>Prodotti</Link>
-          <Link href="/lavori" onClick={() => setMobileMenuOpened(false)}>Lavori</Link>
-          <Link href="/contatti" onClick={() => setMobileMenuOpened(false)}>Contatti</Link>
+          <Link href="/" onClick={() => setMobileMenuOpened(false)}>
+            Home
+          </Link>
+          <Link href="/chisiamo" onClick={() => setMobileMenuOpened(false)}>
+            Chi Siamo
+          </Link>
+          <Link href="/prodotti" onClick={() => setMobileMenuOpened(false)}>
+            Prodotti
+          </Link>
+          <Link href="/lavori" onClick={() => setMobileMenuOpened(false)}>
+            Lavori
+          </Link>
+          <Link href="/contatti" onClick={() => setMobileMenuOpened(false)}>
+            Contatti
+          </Link>
           <FaTimes
             size={30}
             className="absolute top-3 right-3 hover:cursor-pointer p-1 border border-black rounded"
             onClick={() => setMobileMenuOpened(false)}
           />
           <div className="flex flex-row justify-start items-center gap-10 text-xl font-semibold absolute bottom-20">
-          <FaFacebook size={30}/>
-          <FaInstagram size={30}/>
-          <FaLinkedin size={30}/>
-        </div>
+            <FaFacebook size={30} />
+            <FaInstagram size={30} />
+            <FaLinkedin size={30} />
+          </div>
         </div>
       )}
     </>
