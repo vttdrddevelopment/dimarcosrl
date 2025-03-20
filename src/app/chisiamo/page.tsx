@@ -15,16 +15,16 @@ import { CgLayoutGridSmall } from "react-icons/cg";
 import { BiSolidGrid } from "react-icons/bi";
 import LavoraConNoi from "../components/home/LavoraConNoi";
 
-import homebg from "../../../public/home.jpg"
+import homebg from "../../../public/chisiamobg.jpg"
 
 export default function ChiSiamo() {
   return (
     <div className="font-[family-name:var(--font-plus-jakarta-sans)]">
       <div className="grid grid-rows-[20px_1fr_20px] relative h-[50vh] p-8 pb-20 gap-16 padding chisiamo">
-      <Image src={homebg} alt="alt" layout="fill" objectFit="cover" objectPosition="bottom"  className="w-full absolute top-0 h-[50vh]"/>
-        <div className="absolute top-0 w-full h-[50vh] bg-gradient-to-b from-red-900 to-gray-800 opacity-50 z-10"></div>
+      <Image src={homebg} alt="alt" layout="fill" objectFit="cover" objectPosition="center"  className="w-full absolute top-0 h-[50vh]"/>
+        <div className="absolute top-0 w-full h-[50vh] bg-gradient-to-b from-transparency to-gray-800 opacity-50 z-10"></div>
         <div className="flex flex-col gap-4 justify-center items-center w-full h-[50vh]">
-          <h1 className="text-white font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10">
+          <h1 className="text-white uppercase font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10">
             Chi Siamo
           </h1>
           <div className="text-white font-semibold text-lg z-20">
@@ -53,8 +53,8 @@ export default function ChiSiamo() {
       <div className="grid xl:grid-cols-3 grid-cols-1 gap-4 padding pb-20">
         <div className="flex flex-col gap-3 items-center">
           <Image src={team1} alt="alt" width={400} height={400} />
-          <span className="font-extrabold text-xl">Giuseppe Scarci</span>
-          <span>Responsabile commerciale</span>
+          <span className="font-extrabold text-xl">Maurizio Di Marco</span>
+          <span>Amministratore Delegato</span>
           <div className="flex flex-row gap-6">
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
               <FaFacebookF size={20} />
@@ -85,8 +85,8 @@ export default function ChiSiamo() {
         </div>
         <div className="flex flex-col gap-3 items-center">
           <Image src={team1} alt="alt" width={400} height={400} />
-          <span className="font-extrabold text-xl">Giuseppe Scarci</span>
-          <span>Responsabile commerciale</span>
+          <span className="font-extrabold text-xl">Loris Zacchigna</span>
+          <span>Responsabile tecnico</span>
           <div className="flex flex-row gap-6">
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
               <FaFacebookF size={20} />

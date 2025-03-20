@@ -49,7 +49,7 @@ export default function Galleria() {
       </div>
       <div className="flex flex-col gap-10 items-center mt-10 w-full z-10">
         <h1 className="font-bold xl:text-[53px] lg:text-[50px] md:text-[40px] text-[30px] xl:leading-14 lg:leading-12 leading-8">
-          Lavoriamo con i migliori brands
+          I nostri partners
         </h1>
         <div className="grid lg:grid-cols-4 grid-cols-2 gap-10">
           <Image src={areaponzio} alt="alt" width={300} height={300} />
