@@ -71,7 +71,7 @@ export default function Navbar() {
       </div>
       <div className={`${stickyClass} w-full h-[12vh] font-[family-name:var(--font-plus-jakarta-sans)] flex flex-row items-center justify-between padding`}>
         <div className=" flex items-center justify-end">
-          <Image src={logo} alt="alt" width={150} height={400} />
+          <Image src={logo} alt="alt" width={200} height={400} />
         </div>
         <div className="hidden xl:flex flex-row justify-center items-center gap-10 text-lg font-semibold">
           <Link href="/">Home</Link>
