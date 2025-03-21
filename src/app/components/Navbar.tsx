@@ -9,16 +9,33 @@ import {
 } from "react-icons/fa";
 import { GiPositionMarker } from "react-icons/gi";
 import { MdMarkEmailUnread } from "react-icons/md";
+import logobianco from "./../../../public/logobianco.png";
 import logo from "./../../../public/logodimarco.png";
 import Image from "next/image";
 import Link from "next/link";
 import { CiBurger } from "react-icons/ci";
 import { IoMenu } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { PiWindowsLogoFill } from "react-icons/pi";
 
 export default function Navbar() {
   const [mobileMenuOpened, setMobileMenuOpened] = useState(false);
+  const [stickyClass, setStickyClass] = useState('relative');
+
+    useEffect(() => {
+        window.addEventListener('scroll', stickNavbar);
+
+        return () => {
+            window.removeEventListener('scroll', stickNavbar);
+        };
+    }, []);
+
+    const stickNavbar = () => {
+        if (window !== undefined) {
+            let windowHeight = window.scrollY;
+            windowHeight > 300 ? setStickyClass('bg-white fixed top-0 left-0 z-50') : setStickyClass('relative');
+        }
+    };
 
   return (
     <>
@@ -52,7 +69,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="w-full h-[12vh] font-[family-name:var(--font-plus-jakarta-sans)] flex flex-row items-center justify-between padding">
+      <div className={`${stickyClass} w-full h-[12vh] font-[family-name:var(--font-plus-jakarta-sans)] flex flex-row items-center justify-between padding`}>
         <div className=" flex items-center justify-end">
           <Image src={logo} alt="alt" width={150} height={400} />
         </div>
@@ -76,7 +93,8 @@ export default function Navbar() {
         />
       </div>
       {mobileMenuOpened && (
-        <div className="flex flex-col h-screen absolute top-0 w-full xl:hidden bg-primary items-center justify-center gap-10 text-2xl font-semibold z-50">
+        <div className="flex flex-col h-screen absolute top-0 w-full xl:hidden bg-gradient-to-b text-white from-black to-red-950 items-center justify-center gap-10 text-2xl font-semibold z-50">
+          <Image src={logobianco} alt="alt" width={200} height={400} />
           <Link href="/" onClick={() => setMobileMenuOpened(false)}>
             Home
           </Link>

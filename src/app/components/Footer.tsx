@@ -15,7 +15,7 @@ import { PiWindowsLogoFill } from "react-icons/pi";
 
 export default function Footer() {
   return (
-    <div className="w-full bg-black py-10 padding flex flex-col justify-center font-[family-name:var(--font-plus-jakarta-sans)]">
+    <div className="w-full bg-gradient-to-t from-black to-red-950 py-10 padding flex flex-col justify-center font-[family-name:var(--font-plus-jakarta-sans)]">
       <div className="flex flex-row justify-between items-center">
         <h2 className="text-white xl:text-[45px] md:text-[40px] text-[20px] font-extrabold xl:leading-10 leading-5">
           Richiedi un preventivo gratuito!
@@ -27,7 +27,7 @@ export default function Footer() {
           Contattaci
         </Link>
       </div>
-      <hr className="mt-10 text-gray-900" />
+      <hr className="mt-10 text-gray-600" />
       <div className="grid lg:grid-cols-4 lg:gap-20 gap-10 mt-10">
         <div className="flex flex-col gap-4 lg:items-start items-center">
           <Image src={logobianco} alt="alt" width={200} height={300} />
@@ -72,7 +72,7 @@ export default function Footer() {
           <PiWindowsLogoFill size={250} className="text-white" />
         </div>
       </div>
-      <hr className="my-10 text-gray-900" />
+      <hr className="my-10 text-gray-600" />
       <div className="flex flex-row justify-center items-center w-full text-white">
         <span>Copyright © {new Date().getFullYear()} All Rights Reserved.</span>
       </div>

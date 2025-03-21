@@ -1,18 +1,21 @@
 import Image from "next/image";
-import faq1 from "../../../../public/faq1.jpg";
+import faq1 from "../../../../public/faq2.png";
+import background from "../../../../public/background.jpg";
 export default function FAQ() {
   return (
-    <div className="flex flex-col lg:flex-row justify-center gap-10 padding py-10">
+    <div className="flex flex-col lg:flex-row justify-center gap-10 padding py-10 h-screen relative">
+      <Image src={background} alt="alt" layout="fill" objectFit="cover"  className="w-full absolute top-0 h-screen"/>
+      <div className="absolute top-0 left-0 w-full lg:h-screen h-full bg-gray-300 opacity-65 z-10"></div>
       <div className="lg:w-1/2 flex justify-center items-center relative pt-10">
         <Image
           src={faq1}
           alt="alt"
           width={600}
           height={500}
-          className="rounded-t-full z-10"
+          className="rounded-t-full z-10 shadow-2xl shadow-red-950"
         />
       </div>
-      <div className="flex flex-col justify-evenly lg:w-1/2">
+      <div className="flex flex-col justify-evenly lg:w-1/2 z-20">
         <span className="uppercase font-bold text-black md:text-base text-sm">
           DOMANDE FREQUENTI
         </span>
