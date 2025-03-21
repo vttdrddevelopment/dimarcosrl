@@ -16,7 +16,7 @@ export default function About() {
             alt="alt"
             width={400}
             height={500}
-            className="rounded-t-full z-10"
+            className="rounded-t-full z-10 shadow-2xl shadow-red-950"
           />
           <div className="absolute bottom-10 right-20 z-20 gap-2 flex flex-col border-10 border-white rounded-t-full items-center p-10 bg-primary">
             <span className="text-5xl font-bold text-white">98%</span>

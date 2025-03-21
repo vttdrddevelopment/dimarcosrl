@@ -32,10 +32,7 @@ export default function Banner() {
         />
         <div className="absolute top-0 w-full h-screen bg-gradient-to-b from-0% to-60% from-transparent to-red-950 opacity-50 z-10 padding"></div>
         <main className="absolute inset-0 flex items-center justify-start">
-          <div className="flex flex-col w-3/4 gap-5 padding">
-            <span className="uppercase font-bold z-20 text-white md:text-base text-sm">
-              Trasforma la tua casa oggi
-            </span>
+          <div className="flex flex-col w-full gap-5 padding">
             <h1 className="text-white font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10">
               Dal 1970: qualità e attenzione per offrirti il meglio
             </h1>
