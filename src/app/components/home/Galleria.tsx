@@ -8,7 +8,7 @@ import areaponzio from "../../../../public/areaPonzio.png";
 
 export default function Galleria() {
   return (
-    <div className="w-full py-10 bg-gray-200 padding flex flex-col justify-center relative">
+    <div className="w-full py-10 padding flex flex-col justify-center relative">
       <div className="flex lg:flex-row flex-col justify-between items-center z-20">
         <div className="flex flex-col gap-4 justify-evenly lg:w-1/2">
           <span className="uppercase font-bold text-primary md:text-base text-sm">

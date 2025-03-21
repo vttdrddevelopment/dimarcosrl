@@ -16,15 +16,16 @@ import { BiSolidGrid } from "react-icons/bi";
 import LavoraConNoi from "../components/home/LavoraConNoi";
 
 import homebg from "../../../public/chisiamobg.jpg"
+import tabbg from "../../../public/home.jpg"
 
 export default function ChiSiamo() {
   return (
     <div className="font-[family-name:var(--font-plus-jakarta-sans)]">
-      <div className="grid grid-rows-[20px_1fr_20px] relative h-[50vh] p-8 pb-20 gap-16 padding chisiamo">
-      <Image src={homebg} alt="alt" layout="fill" objectFit="cover" objectPosition="center"  className="w-full absolute top-0 h-[50vh]"/>
-        <div className="absolute top-0 w-full h-[50vh] bg-gradient-to-b from-transparency to-gray-800 opacity-50 z-10"></div>
+      <div className="grid grid-rows-[20px_1fr_20px] relative h-[80vh] p-8 pb-20 gap-16 padding chisiamo">
+      <Image src={homebg} alt="alt" layout="fill" objectFit="cover" objectPosition="center"  className="w-full absolute top-0 h-[80vh]"/>
+        <div className="absolute top-0 w-full h-[80vh] bg-gradient-to-b from-transparency to-red-950 opacity-50 z-10"></div>
         <div className="flex flex-col gap-4 justify-center items-center w-full h-[50vh]">
-          <h1 className="text-white uppercase font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10">
+          <h1 className="text-white font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10">
             Chi Siamo
           </h1>
           <div className="text-white font-semibold text-lg z-20">
@@ -100,12 +101,18 @@ export default function ChiSiamo() {
           </div>
         </div>
       </div>
-      <div className="w-full relative chisiamo1 h-[50vh] z-10 bg-cover ">
-        <div className="absolute top-0 w-full h-[50vh] bg-gradient-to-b from-red-900 to-gray-800 opacity-50 z-10"></div>
-      </div>
-      {/* name of each tab group should be unique */}
-      <div className="w-full flex flex-row justify-center padding">
-        <div className="tabs tabs-border rounded bg-white shadow-xl w-full mt-[-200px] relative z-20">
+      <LavoraConNoi/>
+      {/* <div className="padding relative h-screen">
+        <Image
+          src={tabbg}
+          alt="alt"
+          layout="fill"
+          objectFit="cover"
+          className="absolute top-0 left-0"
+        />
+     <div className="absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-transparent to-red-950 opacity-70 z-10 padding"></div>
+     <div className="w-full flex flex-row justify-center lg:w-3/4 absolute text-black font-bold bg-white/75 lg:rounded-2xl bg-opacity-10 p-10 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 gap-4 z-20">
+        <div className="tabs tabs-border rounded bg-transparent w-full relative z-20">
           <label className="tab w-1/3 flex xl:flex-row flex-col items-center">
             <input type="radio" name="my_tabs_4" />
             <GiDiceTarget size={20} className="xl:mr-2" />
@@ -275,8 +282,7 @@ export default function ChiSiamo() {
             </div>
           </div>
         </div>
-      </div>
-      <LavoraConNoi />
+      </div> */}
     </div>
   );
 }
