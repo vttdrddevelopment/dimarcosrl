@@ -18,7 +18,7 @@ export default function Footer() {
     <div className="w-full bg-black py-10 padding flex flex-col justify-center font-[family-name:var(--font-plus-jakarta-sans)]">
       <div className="flex flex-row justify-between items-center">
         <h2 className="text-white xl:text-[45px] md:text-[40px] text-[20px] font-extrabold xl:leading-10 leading-5">
-          Realizziamo il tuo prodotto personalizzato!
+          Richiedi un preventivo gratuito!
         </h2>
         <Link
           href="/contatti"
@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="flex flex-col gap-4 lg:items-start items-center">
           <Image src={logobianco} alt="alt" width={200} height={300} />
           <span className="text-white text-lg">
-            Finestre sul mondo, porte sui tuoi sogni.
+            Dal 1970, qualità e attenzione per offrirti il meglio
           </span>
           <div className="flex flex-row justify-start items-center gap-10 text-xl font-semibold">
             <FaFacebook className="text-white" size={25} />

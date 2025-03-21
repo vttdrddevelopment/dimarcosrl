@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import home from "../../../../public/home.jpg";
+import home from "../../../../public/home2.png";
 
 export default function Banner() {
   //   useEffect(() => {
@@ -22,20 +22,26 @@ export default function Banner() {
   return (
     <>
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-start relative min-h-screen p-8 pb-20 gap-16 padding">
-        <Image src={home} alt="alt" layout="fill" objectFit="cover"  className="w-full absolute top-0 h-screen"/>
-        <div className="absolute top-0 w-full h-screen bg-gradient-to-b from-red-900 to-gray-800 opacity-50 z-10 padding"></div>
+        <Image
+          src={home}
+          alt="alt"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="bottom"
+          className="w-full absolute top-0 h-screen"
+        />
+        <div className="absolute top-0 w-full h-screen bg-gradient-to-b from-0% to-60% from-transparent to-red-950 opacity-50 z-10 padding"></div>
         <main className="absolute inset-0 flex items-center justify-start">
           <div className="flex flex-col w-3/4 gap-5 padding">
             <span className="uppercase font-bold z-20 text-white md:text-base text-sm">
               Trasforma la tua casa oggi
             </span>
             <h1 className="text-white font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10">
-              Finestre e porte di alta qualità per ogni casa
+              Dal 1970: qualità e attenzione per offrirti il meglio
             </h1>
             <span className="font-semibold z-20 text-white xl:text-xl md:text-base text-sm">
-              Scopri un'ampia gamma di finestre e porte splendidamente
-              realizzate che combinano un design moderno con una funzionalità
-              superiore.
+              Funzionalità e design senza compromessi per abitazioni, uffici,
+              edilizia pubblica e strutture industriali
             </span>
             <div className="flex flex-row items-center gap-10">
               <Link
