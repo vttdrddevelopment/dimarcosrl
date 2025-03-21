@@ -59,7 +59,8 @@ export default function Navbar() {
         <div className="hidden xl:flex flex-row justify-center items-center gap-10 text-lg font-semibold">
           <Link href="/">Home</Link>
           <Link href="/chisiamo">Chi Siamo</Link>
-          <Link href="/servizi">Servizi</Link>
+          <Link href="/prodotti">Prodotti</Link>
+          <Link href="/showroom">Show Room</Link>
           <Link href="/lavori">Lavori</Link>
           <Link href="/contatti">Contatti</Link>
         </div>
@@ -84,6 +85,9 @@ export default function Navbar() {
           </Link>
           <Link href="/prodotti" onClick={() => setMobileMenuOpened(false)}>
             Prodotti
+          </Link>
+          <Link href="/showroom" onClick={() => setMobileMenuOpened(false)}>
+            Show Room
           </Link>
           <Link href="/lavori" onClick={() => setMobileMenuOpened(false)}>
             Lavori

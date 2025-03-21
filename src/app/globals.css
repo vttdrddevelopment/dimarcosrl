@@ -24,7 +24,7 @@
 
 @layer utilities {
   .padding {
-    @apply xl:px-80 lg:px-50 px-10 ;
+    @apply xl:px-60 px-10 ;
   }
 }
 
