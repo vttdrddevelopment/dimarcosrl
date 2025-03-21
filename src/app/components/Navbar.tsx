@@ -93,7 +93,7 @@ export default function Navbar() {
         />
       </div>
       {mobileMenuOpened && (
-        <div className="flex flex-col h-screen absolute top-0 w-full xl:hidden bg-gradient-to-b text-white from-black to-red-950 items-center justify-center gap-10 text-2xl font-semibold z-50">
+        <div className="flex flex-col h-screen fixed top-0 w-full xl:hidden bg-gradient-to-b text-white from-black to-red-950 items-center justify-center gap-10 text-2xl font-semibold z-50">
           <Image src={logobianco} alt="alt" width={200} height={400} />
           <Link href="/" onClick={() => setMobileMenuOpened(false)}>
             Home
