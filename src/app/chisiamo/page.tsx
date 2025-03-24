@@ -2,21 +2,10 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import team1 from "../../../public/team1.jpg";
-import chisiamo2 from "../../../public/chisiamo2.jpg";
-import chisiamo3 from "../../../public/chisiamo3.jpg";
-import { FaEye, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import {
-  IoCheckmarkDoneCircle,
-  IoDiamondOutline,
-  IoEyeOutline,
-} from "react-icons/io5";
-import { GiDiceTarget } from "react-icons/gi";
-import { CgLayoutGridSmall } from "react-icons/cg";
-import { BiSolidGrid } from "react-icons/bi";
-import LavoraConNoi from "../components/home/LavoraConNoi";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 import homebg from "../../../public/chisiamobg.jpg"
-import tabbg from "../../../public/home.jpg"
+import LavoraConNoi from "@/app/components/home/LavoraConNoi";
 
 export default function ChiSiamo() {
   return (
