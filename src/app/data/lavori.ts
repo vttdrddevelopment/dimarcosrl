@@ -23,7 +23,7 @@ export let lavori: Lavoro[] = [
     },
     {
         id: 2,
-        nome: "Vetratra Impacchettabile",
+        nome: "Vetratra Impacchettabile Fossacesia",
         mainImage: "/lavori/vetrataImpacchettabile/vetrata.jpg",
         images: [
             "/lavori/vetrataImpacchettabile/vetrata.jpg", 
@@ -40,25 +40,12 @@ export let lavori: Lavoro[] = [
             "/lavori/ringhiereVetro/ringhiere.jpg", 
             "/lavori/ringhiereVetro/ringhiere1.jpg",
             "/lavori/ringhiereVetro/ringhiere2.jpg",
+            "/lavori/lavoro1.jpg",
+            "/lavori/lavoro2.jpg",
         ]
     },
     {
         id: 4,
-        nome: "Ringhiera certificata in vetro/alluminio",
-        mainImage: "/lavori/lavoro1.jpg",
-        images: [
-            
-        ]
-    },
-    {
-        id: 5,
-        nome: "Ringhiere in alluminio/vetro 2",
-        mainImage: "/lavori/lavoro2.jpg",
-        images: [
-        ]
-    },
-    {
-        id: 6,
         nome: "Vetrofacciata gradinata",
         mainImage: "/lavori/lavoro3.jpg",
         images: [

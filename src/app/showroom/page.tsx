@@ -8,17 +8,32 @@ import homebg from "../../../public/bgprodotti.png";
 
 import { IoChevronBackCircle, IoChevronForwardCircle } from "react-icons/io5";
 import Link from "next/link";
+import Masonry from "react-masonry-css";
 
 const images = [
-  "/servizio1.jpg",
-  "/servizio2.jpg",
-  "/servizio3.jpg",
-  "/servizio4.jpg",
-  "/servizio5.jpg",
-  "/servizio6.jpg",
-  "/servizio1.jpg",
-  "/servizio2.jpg",
-  "/servizio3.jpg",
+  "/showroom/showroom1.jpeg",
+  "/showroom/showroom2.jpeg",
+  "/showroom/showroom3.jpeg",
+  "/showroom/showroom4.jpeg",
+  "/showroom/showroom5.jpeg",
+  "/showroom/showroom6.jpeg",
+  "/showroom/showroom7.jpeg",
+  "/showroom/showroom8.jpeg",
+  "/showroom/showroom9.jpeg",
+  "/showroom/showroom10.jpeg",
+  "/showroom/showroom11.jpeg",
+  "/showroom/showroom12.jpeg",
+  "/showroom/showroom13.jpeg",
+  "/showroom/showroom14.jpeg",
+  "/showroom/showroom15.jpeg",
+  "/showroom/showroom16.jpeg",
+  "/showroom/showroom17.jpeg",
+  "/showroom/showroom18.jpeg",
+  "/showroom/showroom19.jpeg",
+  "/showroom/showroom20.jpeg",
+  "/showroom/showroom21.jpeg",
+  "/showroom/showroom22.jpeg",
+  "/showroom/showroom23.jpeg",
 ];
 
 export default function page() {
@@ -35,11 +50,24 @@ export default function page() {
     setPhotoIndex((photoIndex + images.length - 1) % images.length);
   };
 
+  const breakpoints = {
+    default: 3,
+    1200: 2,
+    700: 1,
+  };
+
   return (
     <div className="font-[family-name:var(--font-plus-jakarta-sans)]">
       <div className="grid grid-rows-[20px_1fr_20px] relative h-[80vh] p-8 pb-20 gap-16 padding">
-      <Image src={homebg} alt="alt" layout="fill" objectFit="cover" objectPosition="center"  className="w-full absolute top-0 h-[80vh]"/>
-      <div className="absolute top-0 w-full h-[80vh] bg-gradient-to-t from-transparent to-red-950 opacity-50 z-10"></div>
+        <Image
+          src={homebg}
+          alt="alt"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          className="w-full absolute top-0 h-[80vh]"
+        />
+        <div className="absolute top-0 w-full h-[80vh] bg-gradient-to-t from-transparent to-red-950 opacity-50 z-10"></div>
         <div className="flex flex-col gap-4 justify-center items-center w-full h-[80vh]">
           <h1 className="text-white font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10">
             Show Room
@@ -50,21 +78,29 @@ export default function page() {
           </div>
         </div>
       </div>
-      <div className="grid xl:grid-cols-3 grid-cols-1 gap-8 padding py-20">
-        {images.map((src, index) => (
-          <Image
-            key={index}
-            src={src}
-            alt={`Image ${index + 1}`}
-            width={500}
-            height={500}
-            className="cursor-pointer rounded-lg shadow-lg"
-            onClick={() => {
-              setPhotoIndex(index);
-              setIsOpen(true);
-            }}
-          />
-        ))}
+      <div className="padding py-20">
+        <Masonry
+          breakpointCols={breakpoints}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
+          {images.map((src, index) => (
+            <div key={index} className="rounded-2xl">
+              <Image
+                src={src}
+                alt={`Image ${index + 1}`}
+                width={500}
+                height={500}
+                className="cursor-pointer rounded-lg shadow-lg mb-4"
+                style={{ display: "block", width: "100%" }}
+                onClick={() => {
+                  setPhotoIndex(index);
+                  setIsOpen(true);
+                }}
+              />
+            </div>
+          ))}
+        </Masonry>
         <AnimatePresence>
           {isOpen && (
             <motion.div
