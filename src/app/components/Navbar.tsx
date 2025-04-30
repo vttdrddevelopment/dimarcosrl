@@ -40,10 +40,10 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="w-full font-[family-name:var(--font-plus-jakarta-sans)] md:h-[6vh] h-[10vh] bg-black py-2 flex flex-col md:flex-row items-center padding justify-between text-white">
+      <div className="w-full font-[family-name:var(--font-plus-jakarta-sans)] md:h-[6vh] h-[12vh] bg-black py-2 flex flex-col md:flex-row items-center padding justify-between text-white">
         <div className="flex flex-row justify-end items-center gap-4">
           <div className="flex flex-row items-center gap-2 text-xs md:text-sm">
-            <GiPositionMarker size={25} />
+            <GiPositionMarker size={20} />
             <Link
               className="hover:underline"
               href="https://maps.app.goo.gl/8GcaRzc337HLzfiBA"
@@ -58,15 +58,15 @@ export default function Navbar() {
           </div> */}
         </div>
         <div className="flex flex-row items-center gap-2 text-xs md:text-sm">
-          <MdMarkEmailUnread size={25} />
+          <MdMarkEmailUnread size={20} />
           <Link href="mailto:info@dimarcosrl.it" className="hover:underline">
             info@dimarcosrl.it
           </Link>
         </div>
         <div className="flex flex-row justify-start items-centerxs">
           <div className="flex flex-row items-center gap-2 text-xs md:text-sm">
-            <FaRegClock size={25} />
-            <span>Lunedì-Venerdì dalle 8:30 alle 18:00, Sabato su appuntamento</span>
+            <FaRegClock size={20} />
+            <span>Lun-Ven dalle 8:30 alle 18:00, Sabato su appuntamento</span>
           </div>
         </div>
       </div>

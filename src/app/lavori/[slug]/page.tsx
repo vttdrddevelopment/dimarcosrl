@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoChevronBackCircle, IoChevronForwardCircle } from "react-icons/io5";
 import { lavori, Lavoro } from "../../data/lavori";
+import Masonry from 'react-masonry-css';
 
 export default function Page({
   params,
@@ -15,12 +16,13 @@ export default function Page({
     nome: "",
     mainImage: "",
     images: []
-  } as Lavoro)
+  } as Lavoro);
   useEffect(() => {
     params.then(res => {
-      setlavoroSelezionato(lavori.filter((l) => l.id === parseInt(res.slug))[0])
-    })
-  }, [])
+      setlavoroSelezionato(lavori.filter((l) => l.id === parseInt(res.slug))[0]);
+    });
+  }, [params]); // Aggiungi params come dipendenza per rieseguire l'effetto se cambia
+
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
 
@@ -37,23 +39,41 @@ export default function Page({
     );
   };
 
+  const breakpoints = {
+    default: 3,
+    1200: 2,
+    700: 1
+  };
+
   return (
     <>
-      <div className="grid xl:grid-cols-3 grid-cols-1 gap-8 padding py-20">
-        {lavoroSelezionato.images.map((src, index) => (
-          <Image
-            key={index}
-            src={src}
-            alt={`Image ${index + 1}`}
-            width={500}
-            height={500}
-            className="cursor-pointer rounded-lg shadow-lg"
-            onClick={() => {
-              setPhotoIndex(index);
-              setIsOpen(true);
-            }}
-          />
-        ))}
+      <div className="py-20 padding">
+        {lavoroSelezionato.images.length > 0 ? (
+          <Masonry
+            breakpointCols={breakpoints}
+            className="my-masonry-grid"
+            columnClassName="my-masonry-grid_column"
+          >
+            {lavoroSelezionato.images.map((src, index) => (
+              <div key={index} className="rounded-2xl">
+                <Image
+                  src={src}
+                  alt={`Image ${index + 1}`}
+                  width={500}
+                  height={500}
+                  className="cursor-pointer rounded-lg shadow-lg mb-4"
+                  style={{ display: 'block', width: '100%' }}
+                  onClick={() => {
+                    setPhotoIndex(index);
+                    setIsOpen(true);
+                  }}
+                />
+              </div>
+            ))}
+          </Masonry>
+        ) : (
+          <p>Nessuna immagine disponibile per questo lavoro.</p>
+        )}
         <AnimatePresence>
           {isOpen && (
             <motion.div
