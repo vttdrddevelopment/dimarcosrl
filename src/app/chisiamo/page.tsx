@@ -2,10 +2,11 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import team1 from "../../../public/team1.jpg";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhone } from "react-icons/fa";
 
 import homebg from "../../../public/chisiamobg.jpg"
 import LavoraConNoi from "@/app/components/home/LavoraConNoi";
+import { MdEmail } from "react-icons/md";
 
 export default function ChiSiamo() {
   return (
@@ -47,13 +48,10 @@ export default function ChiSiamo() {
           <span>Amministratore Delegato</span>
           <div className="flex flex-row gap-6">
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <FaFacebookF size={20} />
+              <FaPhone size={20} />
             </div>
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <FaInstagram size={20} />
-            </div>
-            <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <FaLinkedinIn size={20} />
+              <MdEmail size={20} />
             </div>
           </div>
         </div>
@@ -63,13 +61,10 @@ export default function ChiSiamo() {
           <span>Responsabile commerciale</span>
           <div className="flex flex-row gap-6">
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <FaFacebookF size={20} />
+              <FaPhone size={20} />
             </div>
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <FaInstagram size={20} />
-            </div>
-            <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <FaLinkedinIn size={20} />
+              <MdEmail size={20} />
             </div>
           </div>
         </div>
@@ -79,13 +74,10 @@ export default function ChiSiamo() {
           <span>Responsabile tecnico</span>
           <div className="flex flex-row gap-6">
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <FaFacebookF size={20} />
+              <FaPhone size={20} />
             </div>
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <FaInstagram size={20} />
-            </div>
-            <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <FaLinkedinIn size={20} />
+              <MdEmail size={20} />
             </div>
           </div>
         </div>

@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   FaRegClock,
   FaTimes,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { GiPositionMarker } from "react-icons/gi";
 import { MdMarkEmailUnread } from "react-icons/md";
@@ -65,7 +66,7 @@ export default function Navbar() {
         <div className="flex flex-row justify-start items-centerxs">
           <div className="flex flex-row items-center gap-2 text-xs md:text-sm">
             <FaRegClock size={25} />
-            <span>Lunedì-Venerdì dalle 8:00 alle 18:00</span>
+            <span>Lunedì-Venerdì dalle 8:30 alle 18:00, Sabato su appuntamento</span>
           </div>
         </div>
       </div>
@@ -84,7 +85,7 @@ export default function Navbar() {
         <div className="hidden xl:flex flex-row justify-start items-center gap-10 text-xl font-semibold">
           <FaFacebook />
           <FaInstagram />
-          <FaLinkedin />
+          <FaWhatsapp />
         </div>
         <PiWindowsLogoFill
           size={40}
