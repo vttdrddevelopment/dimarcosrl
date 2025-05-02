@@ -15,6 +15,7 @@ export default function Page({
     id: 0,
     nome: "",
     mainImage: "",
+    homePage: false,
     images: []
   } as Lavoro);
   useEffect(() => {

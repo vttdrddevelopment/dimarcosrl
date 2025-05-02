@@ -11,10 +11,10 @@ import tapparelle from "../../../public/prodotti/tapparelle.jpg";
 import scuri from "../../../public/prodotti/scuri.png";
 import frangisole from "../../../public/prodotti/frangisole.jpg";
 import portoni from "../../../public/prodotti/portoni.png";
-import sezionali from "../../../public/prodotti/sezionali.png";
+import sezionali from "../../../public/prodotti/sezionali.jpg";
 import basculanti from "../../../public/prodotti/basculanti.jpg";
 import serrande from "../../../public/prodotti/serrande.jpg";
-import homebg from "../../../public/bgprodotti.png";
+import homebg from "../../../public/prodotti/sezionali3.jpg";
 
 import Link from "next/link";
 

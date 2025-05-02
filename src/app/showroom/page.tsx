@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
-import homebg from "../../../public/bgprodotti.png";
+import homebg from "../../../public/showroom/showroom17.jpeg";
 
 import { IoChevronBackCircle, IoChevronForwardCircle } from "react-icons/io5";
 import Link from "next/link";

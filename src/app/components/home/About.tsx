@@ -5,6 +5,13 @@ import { LiaWindows } from "react-icons/lia";
 
 import Link from "next/link";
 import { AiOutlineWindows } from "react-icons/ai";
+import { GoGoal } from "react-icons/go";
+import { GrObjectGroup } from "react-icons/gr";
+import { MdOutlineEnergySavingsLeaf } from "react-icons/md";
+import { BsSoundwave } from "react-icons/bs";
+import { HiOutlineHomeModern, HiOutlineLightBulb } from "react-icons/hi2";
+import { TiTime } from "react-icons/ti";
+import { GiEcology } from "react-icons/gi";
 
 export default function About() {
   return (
@@ -45,7 +52,7 @@ export default function About() {
           </span>
           <div className="flex flex-col gap-4">
             <div className="flex lg:flex-row flex-col lg:items-center gap-4 justify-center">
-              <LiaWindows size={80} className="text-primary" />
+              <GoGoal className="text-primary lg:w-[80px] lg:h-[80px] w-[60px] h-[60px]" />
               <div className="flex flex-col gap-2">
                 <span className="lg:text-3xl text-2xl font-bold">
                   La nostra missione
@@ -58,7 +65,7 @@ export default function About() {
               </div>
             </div>
             <div className="flex lg:flex-row flex-col lg:items-center gap-4 justify-center">
-              <LiaWindows size={80} className="text-primary" />
+              <GrObjectGroup className="text-primary lg:w-[80px] lg:h-[80px] w-[60px] h-[60px]" />
               <div className="flex flex-col gap-2">
                 <span className="lg:text-3xl text-2xl font-bold">
                   La nostra visione
@@ -84,37 +91,37 @@ export default function About() {
       </div>
       <div className="grid lg:grid-cols-6 grid-cols-3 gap-10 padding py-10">
         <div className="flex flex-col gap-2 text-center items-center">
-          <AiOutlineWindows size={50} className="text-primary" />
+          <MdOutlineEnergySavingsLeaf size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
             Risparmio energetico
           </span>
         </div>
         <div className="flex flex-col gap-2 text-center items-center">
-          <AiOutlineWindows size={50} className="text-primary" />
+          <BsSoundwave size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
             Ottimo isolamento acustico
           </span>
         </div>
         <div className="flex flex-col gap-2 text-center items-center">
-          <AiOutlineWindows size={50} className="text-primary" />
+          <HiOutlineLightBulb size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
             Elevata trasmissione della luce
           </span>
         </div>
         <div className="flex flex-col gap-2 text-center items-center">
-          <AiOutlineWindows size={50} className="text-primary" />
+          <TiTime size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
             Durata 10 anni di garanzia
           </span>
         </div>
         <div className="flex flex-col gap-2 text-center items-center">
-          <AiOutlineWindows size={50} className="text-primary" />
+          <GiEcology size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
             Materiali ecologici
           </span>
         </div>
         <div className="flex flex-col gap-2 text-center items-center">
-          <AiOutlineWindows size={50} className="text-primary" />
+          <HiOutlineHomeModern size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
             Design moderno e ponderato
           </span>

@@ -21,22 +21,24 @@ import { PiWindowsLogoFill } from "react-icons/pi";
 
 export default function Navbar() {
   const [mobileMenuOpened, setMobileMenuOpened] = useState(false);
-  const [stickyClass, setStickyClass] = useState('relative');
+  const [stickyClass, setStickyClass] = useState("relative");
 
-    useEffect(() => {
-        window.addEventListener('scroll', stickNavbar);
+  useEffect(() => {
+    window.addEventListener("scroll", stickNavbar);
 
-        return () => {
-            window.removeEventListener('scroll', stickNavbar);
-        };
-    }, []);
-
-    const stickNavbar = () => {
-        if (window !== undefined) {
-            let windowHeight = window.scrollY;
-            windowHeight > 300 ? setStickyClass('bg-white fixed top-0 left-0 z-50') : setStickyClass('relative');
-        }
+    return () => {
+      window.removeEventListener("scroll", stickNavbar);
     };
+  }, []);
+
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight > 300
+        ? setStickyClass("bg-white fixed top-0 left-0 z-50")
+        : setStickyClass("relative");
+    }
+  };
 
   return (
     <>
@@ -70,10 +72,12 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className={`${stickyClass} w-full h-[12vh] font-[family-name:var(--font-plus-jakarta-sans)] flex flex-row items-center justify-between padding`}>
-        <div className=" flex items-center justify-end">
+      <div
+        className={`${stickyClass} w-full h-[12vh] font-[family-name:var(--font-plus-jakarta-sans)] flex flex-row items-center justify-between padding`}
+      >
+        <Link href="/" className=" flex items-center justify-end">
           <Image src={logo} alt="alt" width={200} height={400} />
-        </div>
+        </Link>
         <div className="hidden xl:flex flex-row justify-center items-center gap-10 text-lg font-semibold">
           <Link href="/">Home</Link>
           <Link href="/chisiamo">Chi Siamo</Link>
@@ -95,7 +99,9 @@ export default function Navbar() {
       </div>
       {mobileMenuOpened && (
         <div className="flex flex-col h-screen fixed top-0 w-full xl:hidden bg-gradient-to-b text-white from-black to-red-950 items-center justify-center gap-10 text-2xl font-semibold z-50">
-          <Image src={logobianco} alt="alt" width={200} height={400} />
+          <Link href="/" onClick={() => setMobileMenuOpened(false)}>
+            <Image src={logobianco} alt="alt" width={200} height={400} />
+          </Link>
           <Link href="/" onClick={() => setMobileMenuOpened(false)}>
             Home
           </Link>

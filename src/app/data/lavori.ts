@@ -2,6 +2,7 @@ export interface Lavoro {
     id: number,
     nome: string,
     mainImage: string,
+    homePage: boolean,
     images: string[]
 }
 
@@ -10,6 +11,7 @@ export let lavori: Lavoro[] = [
         id: 1,
         nome: "Borgo Marino Pescara",
         mainImage: "/lavori/borgoMarino/borgoMarino.jpg",
+        homePage: true,
         images: [
             "/lavori/borgoMarino/borgoMarino.jpg", 
             "/lavori/borgoMarino/borgoMarino1.jpg",
@@ -25,6 +27,7 @@ export let lavori: Lavoro[] = [
         id: 2,
         nome: "Vetratra Impacchettabile Fossacesia",
         mainImage: "/lavori/vetrataImpacchettabile/vetrata.jpg",
+        homePage: true,
         images: [
             "/lavori/vetrataImpacchettabile/vetrata.jpg", 
             "/lavori/vetrataImpacchettabile/vetrata1.jpg",
@@ -36,6 +39,7 @@ export let lavori: Lavoro[] = [
         id: 3,
         nome: "Ringhiere In Vetro",
         mainImage: "/lavori/ringhiereVetro/ringhiere.jpg",
+        homePage: true,
         images: [
             "/lavori/ringhiereVetro/ringhiere.jpg", 
             "/lavori/ringhiereVetro/ringhiere1.jpg",
@@ -48,6 +52,7 @@ export let lavori: Lavoro[] = [
         id: 4,
         nome: "Vetrofacciata gradinata",
         mainImage: "/lavori/lavoro3.jpg",
+        homePage: false,
         images: [
             
         ]

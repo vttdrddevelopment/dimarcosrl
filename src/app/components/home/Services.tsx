@@ -3,6 +3,10 @@ import background from "../../../../public/background.jpg"
 import service1 from "../../../../public/service1.png";
 
 import Image from "next/image";
+import { RiCustomerService2Line, RiCustomSize } from "react-icons/ri";
+import { LuDoorClosed, LuDoorOpen } from "react-icons/lu";
+import { MdOutlineEnergySavingsLeaf } from "react-icons/md";
+import { GiAutoRepair } from "react-icons/gi";
 
 export default function Services() {
   return (
@@ -27,7 +31,7 @@ export default function Services() {
       <div className="grid lg:grid-cols-3 items-center gap-10 mt-20 z-20">
         <div className="flex flex-col gap-4">
           <div className="flex flex-row lg:items-center gap-4 lg:justify-center">
-            <LiaWindows size={80} className="text-primary" />
+            <RiCustomSize  className="text-primary lg:w-[80px] lg:h-[80px] w-[60px] h-[60px]" />
             <div className="flex flex-col gap-2 w-4/5">
               <span className="lg:text-xl text-xl font-bold">
                 Installazione di finestre personalizzate
@@ -40,7 +44,7 @@ export default function Services() {
           </div>
           <hr className="my-3 text-gray-400" />
           <div className="flex flex-row lg:items-center gap-4 lg:justify-center">
-            <LiaWindows size={80} className="text-primary" />
+            <LuDoorOpen  className="text-primary lg:w-[80px] lg:h-[80px] w-[60px] h-[60px]" />
             <div className="flex flex-col gap-2 w-4/5">
               <span className="lg:text-xl text-xl font-bold">
                 Installazione e sostituzione porte
@@ -53,7 +57,7 @@ export default function Services() {
           </div>
           <hr className="my-3 text-gray-400" />
           <div className="flex flex-row lg:items-center gap-4 lg:justify-center">
-            <LiaWindows size={80} className="text-primary" />
+            <MdOutlineEnergySavingsLeaf  className="text-primary lg:w-[80px] lg:h-[80px] w-[60px] h-[60px]" />
             <div className="flex flex-col gap-2 w-4/5">
               <span className="lg:text-xl text-xl font-bold">
                 Soluzioni ad alta efficienza energetica
@@ -70,7 +74,7 @@ export default function Services() {
         </div>
         <div className="flex flex-col gap-4">
           <div className="flex flex-row lg:items-center gap-4 lg:justify-center">
-            <LiaWindows size={80} className="text-primary" />
+            <GiAutoRepair  className="text-primary lg:w-[80px] lg:h-[80px] w-[60px] h-[60px]" />
             <div className="flex flex-col gap-2 w-4/5">
               <span className="lg:text-2xl text-xl font-bold">
                 Riparazione di finestre e porte
@@ -83,7 +87,7 @@ export default function Services() {
           </div>
           <hr className="my-3 text-gray-400" />
           <div className="flex flex-row lg:items-center gap-4 lg:justify-center">
-            <LiaWindows size={80} className="text-primary" />
+            <RiCustomerService2Line  className="text-primary lg:w-[80px] lg:h-[80px] w-[60px] h-[60px]" />
             <div className="flex flex-col gap-2 w-4/5">
               <span className="lg:text-2xl text-xl font-bold">
               Servizi di consulenza e progettazione
@@ -95,7 +99,7 @@ export default function Services() {
           </div>
           <hr className="my-3 text-gray-400" />
           <div className="flex flex-row lg:items-center gap-4 lg:justify-center">
-            <LiaWindows size={80} className="text-primary" />
+            <LuDoorClosed  className="text-primary lg:w-[80px] lg:h-[80px] w-[60px] h-[60px]" />
             <div className="flex flex-col gap-2 w-4/5">
               <span className="lg:text-2xl text-xl font-bold">
               Finestre e porte commerciali
