@@ -4,7 +4,13 @@ import background from "../../../../public/background.jpg";
 export default function FAQ() {
   return (
     <div className="flex flex-col lg:flex-row justify-center gap-10 padding py-10 h-full relative">
-      <Image src={background} alt="alt" layout="fill" objectFit="cover"  className="w-full absolute top-0 h-full"/>
+      <Image
+        src={background}
+        alt="alt"
+        layout="fill"
+        objectFit="cover"
+        className="w-full absolute top-0 h-full"
+      />
       <div className="absolute top-0 left-0 w-full h-full bg-gray-300 opacity-65 z-10"></div>
       <div className="lg:w-1/2 flex justify-center items-center relative pt-10">
         <Image
@@ -20,51 +26,64 @@ export default function FAQ() {
           DOMANDE FREQUENTI
         </span>
         <h1 className="font-bold xl:text-[53px] text-black lg:text-[50px] md:text-[40px] text-[30px] xl:leading-14 lg:leading-12 leading-8">
-        Risposte alle tue domande più frequenti
+          Risposte alle tue domande più frequenti
         </h1>
         <div className="collapse collapse-plus text-black border-b rounded-[0px] border-base-300">
           <input type="radio" name="my-accordion-3" defaultChecked />
           <div className="collapse-title lg:text-2xl font-semibold">
-            1. Che tipi di finestre offrite?
+            1. I vostri infissi sono certificati e rispettano le normative
+            vigenti?
           </div>
           <div className="collapse-content text-sm">
-          We offer a wide variety of windows, including double-hung, casement, sliding, bay, and custom-designed windows.
+            Sì, tutti i nostri infissi sono dotati di Marcatura CE, conforme
+            alla norma UNI EN 14351-1, che garantisce il rispetto dei requisiti
+            europei in termini di sicurezza e prestazioni. Inoltre, forniamo la
+            Certificazione Energetica, attestando l'efficienza termica dei
+            nostri prodotti, fondamentale per accedere alle detrazioni fiscali.
+            Offriamo anche certificazioni specifiche, come quelle per
+            l'isolamento acustico e la resistenza all'effrazione, per assicurare
+            la massima qualità e sicurezza.
           </div>
         </div>
         <div className="collapse collapse-plus text-black border-b rounded-[0px] border-base-300">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title lg:text-2xl font-semibold">
-          2. Quanto tempo richiede l'installazione delle finestre?
+            2. Effettuate anche rimozione e smaltimento dei vecchi infissi?
           </div>
           <div className="collapse-content text-sm">
-          We offer a wide variety of windows, including double-hung, casement, sliding, bay, and custom-designed windows.
+            Sì, su richiesta, ci occupiamo della rimozione e dello smaltimento
+            in conformità alle normative ambientali vigenti.
           </div>
         </div>
         <div className="collapse collapse-plus text-black border-b rounded-[0px] border-base-300">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title lg:text-2xl font-semibold">
-          3. Le vostre finestre sono a risparmio energetico?
+            3. Come posso richiedere un preventivo personalizzato?
           </div>
           <div className="collapse-content text-sm">
-          We offer a wide variety of windows, including double-hung, casement, sliding, bay, and custom-designed windows.
+            Puoi contattarci via email, telefono o venire direttamente in
+            showroom per una consulenza senza impegno e per vedere da vicino i
+            nostri prodotti.
           </div>
         </div>
         <div className="collapse collapse-plus text-black border-b rounded-[0px] border-base-300">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title lg:text-2xl font-semibold">
-          4. Offrite dimensioni personalizzate per finestre e porte?
+            4. Quali sono le detrazioni fiscali vigenti a cui posso accedere?
           </div>
           <div className="collapse-content text-sm">
-          We offer a wide variety of windows, including double-hung, casement, sliding, bay, and custom-designed windows.
+            È possibile, fino alla fine dell’anno, usufruire di incentivi come
+            l’Ecobonus o il Bonus Casa, a seconda della tipologia di intervento.
           </div>
         </div>
         <div className="collapse collapse-plus text-black border-b rounded-[0px] border-base-300">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title lg:text-2xl font-semibold">
-          5. Che tipo di manutenzione è richiesta per le mie finestre e porte?
+            5. Quali sono i tempi di produzione e installazione degli infissi?
           </div>
           <div className="collapse-content text-sm">
-          We offer a wide variety of windows, including double-hung, casement, sliding, bay, and custom-designed windows.
+            I tempi variano in base al tipo di infisso e al progetto, ma in
+            genere la consegna avviene entro 4-6 settimane dall’ordine.
           </div>
         </div>
       </div>

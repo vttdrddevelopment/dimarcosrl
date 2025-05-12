@@ -12,6 +12,9 @@ import { BsSoundwave } from "react-icons/bs";
 import { HiOutlineHomeModern, HiOutlineLightBulb } from "react-icons/hi2";
 import { TiTime } from "react-icons/ti";
 import { GiEcology } from "react-icons/gi";
+import { ImCoinEuro } from "react-icons/im";
+import { FaLock } from "react-icons/fa";
+import { CiLock } from "react-icons/ci";
 
 export default function About() {
   return (
@@ -41,39 +44,48 @@ export default function About() {
             Chi Siamo
           </span>
           <h1 className="font-bold xl:text-[53px] lg:text-[50px] md:text-[40px] text-[30px] xl:leading-14 lg:leading-12 leading-8">
-            Competenza in finestre e porte per ogni stile
+            L’eccellenza dell’artigianato per infissi su misura
           </h1>
           <span className="md:text-base text-sm">
-            Collabora con un'azienda dedita all'eccellenza nelle installazioni
-            di finestre e porte, assicurandoti che ogni progetto venga gestito
-            con precisione e cura. Il nostro impegno è quello di fornire
-            installazioni che non solo soddisfino ma superino le tue
-            aspettative.
+            Ogni nostro infisso nasce dall’esperienza e dalla passione dei
+            nostri artigiani. Realizziamo serramenti su misura, combinando
+            tradizione e innovazione per garantire qualità, resistenza e design
+            unico. Ogni dettaglio è curato con precisione per offrirti soluzioni
+            che durano nel tempo.
           </span>
           <div className="flex flex-col gap-4">
             <div className="flex lg:flex-row flex-col lg:items-center gap-4 justify-center">
-              <GoGoal className="text-primary lg:w-[80px] lg:h-[80px] w-[60px] h-[60px]" />
-              <div className="flex flex-col gap-2">
+              <GoGoal className="text-primary lg:w-[85px] lg:h-[85px] w-[60px] h-[60px]" />
+              <div className="flex flex-col gap-2 w-full">
                 <span className="lg:text-3xl text-2xl font-bold">
                   La nostra missione
                 </span>
                 <span className="lg:text-base text-sm">
-                  Miriamo a trasformare case e aziende con soluzioni di porte e
-                  finestre di alta qualità che migliorino l'estetica e
-                  migliorino l'efficienza energetica.
+                  Dal 1970 realizziamo infissi, serramenti e strutture
+                  metalliche con la cura e la qualità dell’artigianato, unendo
+                  esperienza, innovazione e personalizzazione. Ogni prodotto è
+                  pensato per rispondere alle esigenze dei clienti. Garantiamo
+                  qualità, efficienza e durata nel tempo. Seguiamo i nostri
+                  clienti in ogni fase, dalla scelta iniziale fino
+                  all’assistenza post-vendita, per un servizio completo e
+                  affidabile.
                 </span>
               </div>
             </div>
             <div className="flex lg:flex-row flex-col lg:items-center gap-4 justify-center">
               <GrObjectGroup className="text-primary lg:w-[80px] lg:h-[80px] w-[60px] h-[60px]" />
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 w-full">
                 <span className="lg:text-3xl text-2xl font-bold">
                   La nostra visione
                 </span>
                 <span className="lg:text-base text-sm">
-                  Crediamo nell'integrità e nella sostenibilità. Il nostro
-                  obiettivo è fornire non solo prodotti, ma soluzioni che
-                  migliorino le case e riducano il dispendio di energia.
+                  Vogliamo essere un punto di riferimento nel settore,
+                  riconosciuti per l’eccellenza artigianale e la capacità di
+                  offrire soluzioni per ogni contesto. Miriamo a innovare
+                  continuamente i nostri processi produttivi, con l’obiettivo di
+                  combinare qualità, efficienza e sostenibilità. Crediamo in un
+                  rapporto di fiducia con il cliente: la nostra attenzione va
+                  oltre il prodotto.
                 </span>
               </div>
             </div>
@@ -103,27 +115,27 @@ export default function About() {
           </span>
         </div>
         <div className="flex flex-col gap-2 text-center items-center">
-          <HiOutlineLightBulb size={50} className="text-primary" />
+          <CiLock size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
-            Elevata trasmissione della luce
+            Antieffrazione
           </span>
         </div>
         <div className="flex flex-col gap-2 text-center items-center">
           <TiTime size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
-            Durata 10 anni di garanzia
+            Garanzia
           </span>
         </div>
         <div className="flex flex-col gap-2 text-center items-center">
           <GiEcology size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
-            Materiali ecologici
+            Materiali ecosostenibili
           </span>
         </div>
         <div className="flex flex-col gap-2 text-center items-center">
-          <HiOutlineHomeModern size={50} className="text-primary" />
+          <ImCoinEuro size={50} className="text-primary" />
           <span className="font-bold lg:text-lg text-sm">
-            Design moderno e ponderato
+            Possibilità di finanziamento
           </span>
         </div>
       </div>

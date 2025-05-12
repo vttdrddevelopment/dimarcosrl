@@ -23,11 +23,11 @@ export default function Galleria() {
             Scopri i nostri lavori
           </h1>
         </div>
-        <span className="md:text-base text-sm lg:w-1/2 mt-6 lg:mt-0">
+        {/* <span className="md:text-base text-sm lg:w-1/2 mt-6 lg:mt-0">
           Esplora la nostra galleria di progetti completati di finestre e porte
           per vedere la qualità artigianale e l'attenzione ai dettagli che
           apportiamo a ogni installazione.
-        </span>
+        </span> */}
       </div>
       <div className="grid lg:grid-cols-3 items-center gap-10 my-10 z-20">
         {lavori.filter(l => l.homePage).map((l) => {
@@ -62,9 +62,9 @@ export default function Galleria() {
           <Image src={schuco} alt="alt" width={300} height={300} />
           <Image src={bettio} alt="alt" width={300} height={300} />
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-20 gap-10 items-center">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-20 gap-10 items-center justify-evenly">
           <Image src={velux} alt="alt" width={300} height={300} />
-          <Image src={metra} alt="alt" width={300} height={300} />
+          <Image src={metra} alt="alt" width={200} height={200} className="mx-auto"/>
           <Image src={rintal} alt="alt" width={300} height={300} />
         </div>
       </div>
