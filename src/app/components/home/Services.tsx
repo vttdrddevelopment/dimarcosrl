@@ -2,7 +2,7 @@ import { LiaWindows } from "react-icons/lia";
 import background from "../../../../public/background.jpg";
 import service1 from "../../../../public/service1.png";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { RiCustomerService2Line, RiCustomSize } from "react-icons/ri";
 import { LuDoorClosed, LuDoorOpen } from "react-icons/lu";
 import { MdOutlineEnergySavingsLeaf } from "react-icons/md";

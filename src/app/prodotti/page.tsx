@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import infissiAlluminio from "../../../public/prodotti/infissiAlluminiopng.jpg";
 import infissiAlluminioScorrevoli from "../../../public/prodotti/infissiAlluminioScorrevoli.png";

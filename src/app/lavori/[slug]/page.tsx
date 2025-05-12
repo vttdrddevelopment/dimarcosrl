@@ -1,5 +1,5 @@
 "use client"
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoChevronBackCircle, IoChevronForwardCircle } from "react-icons/io5";

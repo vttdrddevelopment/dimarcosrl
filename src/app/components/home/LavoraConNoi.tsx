@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import lavoraconnoi1 from "../../../../public/lavoraconnoi2.png";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";

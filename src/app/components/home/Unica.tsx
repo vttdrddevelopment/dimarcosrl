@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import bgUnica from "../../../../public/background-unica.jpg"
 
 export default function Unica() {

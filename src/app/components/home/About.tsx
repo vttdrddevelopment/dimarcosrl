@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import about1 from "../../../../public/about1.jpg";
 import { PiWindowsLogoFill } from "react-icons/pi";
 import { LiaWindows } from "react-icons/lia";

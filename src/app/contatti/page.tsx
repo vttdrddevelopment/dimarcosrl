@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import homebg from "../../../public/bgprodotti.png";
 import contatti1 from "../../../public/contatti1.jpg";

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import team1 from "../../../public/team1.jpg";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhone } from "react-icons/fa";
 

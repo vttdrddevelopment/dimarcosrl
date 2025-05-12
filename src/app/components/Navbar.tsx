@@ -12,7 +12,7 @@ import { GiPositionMarker } from "react-icons/gi";
 import { MdMarkEmailUnread } from "react-icons/md";
 import logobianco from "./../../../public/logobianco.png";
 import logo from "./../../../public/logodimarco.png";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { CiBurger } from "react-icons/ci";
 import { IoMenu } from "react-icons/io5";

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import faq1 from "../../../../public/faq2.png";
 import background from "../../../../public/background.jpg";
 export default function FAQ() {
