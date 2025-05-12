@@ -1,5 +1,5 @@
 "use client"
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoChevronBackCircle, IoChevronForwardCircle } from "react-icons/io5";
@@ -63,12 +63,16 @@ export default function Page({
                   width={500}
                   height={500}
                   className="cursor-pointer rounded-lg shadow-lg mb-4"
-                  style={{ display: 'block', width: '100%' }}
                   onClick={() => {
                     setPhotoIndex(index);
                     setIsOpen(true);
                   }}
-                />
+                  style={{
+                    display: 'block',
+                    width: '100%',
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               </div>
             ))}
           </Masonry>

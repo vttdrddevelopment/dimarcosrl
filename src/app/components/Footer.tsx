@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import logobianco from "../../../public/logobianco.png";
 import finestra from "../../../public/finsestra.png";
@@ -30,7 +30,15 @@ export default function Footer() {
       <hr className="mt-10 text-gray-600" />
       <div className="grid lg:grid-cols-4 lg:gap-20 gap-10 mt-10">
         <div className="flex flex-col gap-4 lg:items-start items-center">
-          <Image src={logobianco} alt="alt" width={200} height={300} />
+          <Image
+            src={logobianco}
+            alt="alt"
+            width={200}
+            height={300}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
           <span className="text-white text-lg">
             Dal 1970, qualità e attenzione per offrirti il meglio
           </span>

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import team1 from "../../../public/team1.jpg";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhone } from "react-icons/fa";
 
@@ -12,7 +12,16 @@ export default function ChiSiamo() {
   return (
     <div className="font-[family-name:var(--font-plus-jakarta-sans)]">
       <div className="grid grid-rows-[20px_1fr_20px] relative h-[80vh] p-8 pb-20 gap-16 padding chisiamo">
-      <Image src={homebg} alt="alt" layout="fill" objectFit="cover" objectPosition="center"  className="w-full absolute top-0 h-[80vh]"/>
+      <Image
+        src={homebg}
+        alt="alt"
+        className="w-full absolute top-0 h-[80vh]"
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover",
+          objectPosition: "center"
+        }} />
         <div className="absolute top-0 w-full h-[80vh] bg-gradient-to-b from-transparency to-red-950 opacity-50 z-10"></div>
         <div className="flex flex-col gap-4 justify-center items-center w-full h-[50vh]">
           <h1 className="text-white font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10">
@@ -43,7 +52,15 @@ export default function ChiSiamo() {
       </div>
       <div className="grid xl:grid-cols-3 grid-cols-1 gap-4 padding pb-20">
         <div className="flex flex-col gap-3 items-center">
-          <Image src={team1} alt="alt" width={400} height={400} />
+          <Image
+            src={team1}
+            alt="alt"
+            width={400}
+            height={400}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
           <span className="font-extrabold text-xl">Maurizio Di Marco</span>
           <span>Amministratore Delegato</span>
           <div className="flex flex-row gap-6">
@@ -56,7 +73,15 @@ export default function ChiSiamo() {
           </div>
         </div>
         <div className="flex flex-col gap-3 items-center">
-          <Image src={team1} alt="alt" width={400} height={400} />
+          <Image
+            src={team1}
+            alt="alt"
+            width={400}
+            height={400}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
           <span className="font-extrabold text-xl">Giuseppe Scarci</span>
           <span>Responsabile commerciale</span>
           <div className="flex flex-row gap-6">
@@ -69,7 +94,15 @@ export default function ChiSiamo() {
           </div>
         </div>
         <div className="flex flex-col gap-3 items-center">
-          <Image src={team1} alt="alt" width={400} height={400} />
+          <Image
+            src={team1}
+            alt="alt"
+            width={400}
+            height={400}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
           <span className="font-extrabold text-xl">Loris Zacchigna</span>
           <span>Responsabile tecnico</span>
           <div className="flex flex-row gap-6">

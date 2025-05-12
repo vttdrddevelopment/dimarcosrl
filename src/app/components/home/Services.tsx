@@ -2,7 +2,7 @@ import { LiaWindows } from "react-icons/lia";
 import background from "../../../../public/background.jpg";
 import service1 from "../../../../public/service1.png";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { RiCustomerService2Line, RiCustomSize } from "react-icons/ri";
 import { LuDoorClosed, LuDoorOpen } from "react-icons/lu";
 import { MdOutlineEnergySavingsLeaf } from "react-icons/md";
@@ -16,10 +16,12 @@ export default function Services() {
       <Image
         src={background}
         alt="alt"
-        layout="fill"
-        objectFit="cover"
         className="w-full absolute top-0 h-screen"
-      />
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover"
+        }} />
       <div className="absolute top-0 left-0 w-full lg:h-screen h-full bg-gray-300 opacity-65 z-10"></div>
       <div className="flex lg:flex-row flex-col justify-between items-center z-20">
         <div className="flex flex-col gap-4 justify-evenly lg:w-1/2">
@@ -81,7 +83,15 @@ export default function Services() {
           </div>
         </div>
         <div className="flex flex-row justify-center">
-          <Image src={service1} alt="alt" width={400} height={500} />
+          <Image
+            src={service1}
+            alt="alt"
+            width={400}
+            height={500}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
         <div className="flex flex-col gap-4">
           <div className="flex flex-row lg:items-center gap-4 lg:justify-center">

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import home from "../../../../public/home2.png";
 
 export default function Banner() {
@@ -25,11 +25,13 @@ export default function Banner() {
         <Image
           src={home}
           alt="alt"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="bottom"
           className="w-full absolute top-0 h-screen"
-        />
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+            objectPosition: "bottom"
+          }} />
         <div className="absolute top-0 w-full h-screen bg-gradient-to-b from-0% to-60% from-transparent to-red-950 opacity-50 z-10 padding"></div>
         <main className="absolute inset-0 flex items-center justify-start">
           <div className="flex flex-col w-full gap-5 padding">

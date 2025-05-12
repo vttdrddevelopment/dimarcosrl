@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 
 import areaponzio from "../../../../public/areaPonzio.png";
@@ -40,10 +40,12 @@ export default function Galleria() {
               <Image
                 src={l.mainImage}
                 alt="alt"
-                layout="fill"
-                objectFit="cover"
                 className="w-full absolute top-0 h-[500px]"
-              />
+                fill
+                sizes="100vw"
+                style={{
+                  objectFit: "cover"
+                }} />
               <span className="text-white font-bold text-xl z-30 absolute bottom-10 left-10">
                 {l.nome}
               </span>
@@ -57,15 +59,72 @@ export default function Galleria() {
           I nostri partners
         </h1>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-20 gap-10 items-center">
-          <Image src={areaponzio} alt="alt" width={300} height={300} />
-          <Image src={hormann} alt="alt" width={300} height={300} />
-          <Image src={schuco} alt="alt" width={300} height={300} />
-          <Image src={bettio} alt="alt" width={300} height={300} />
+          <Image
+            src={areaponzio}
+            alt="alt"
+            width={300}
+            height={300}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
+          <Image
+            src={hormann}
+            alt="alt"
+            width={300}
+            height={300}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
+          <Image
+            src={schuco}
+            alt="alt"
+            width={300}
+            height={300}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
+          <Image
+            src={bettio}
+            alt="alt"
+            width={300}
+            height={300}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-20 gap-10 items-center justify-evenly">
-          <Image src={velux} alt="alt" width={300} height={300} />
-          <Image src={metra} alt="alt" width={200} height={200} className="mx-auto"/>
-          <Image src={rintal} alt="alt" width={300} height={300} />
+          <Image
+            src={velux}
+            alt="alt"
+            width={300}
+            height={300}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
+          <Image
+            src={metra}
+            alt="alt"
+            width={200}
+            height={200}
+            className="mx-auto"
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
+          <Image
+            src={rintal}
+            alt="alt"
+            width={300}
+            height={300}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
       </div>
     </div>

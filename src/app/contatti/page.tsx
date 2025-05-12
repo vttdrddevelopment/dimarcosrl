@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import homebg from "../../../public/bgprodotti.png";
 import contatti1 from "../../../public/contatti1.jpg";
@@ -11,7 +11,16 @@ export default function page() {
   return (
     <div className="font-[family-name:var(--font-plus-jakarta-sans)]">
       <div className="grid grid-rows-[20px_1fr_20px] relative h-[80vh] p-8 pb-20 gap-16 padding">
-      <Image src={homebg} alt="alt" layout="fill" objectFit="cover" objectPosition="center"  className="w-full absolute top-0 h-[80vh]"/>
+      <Image
+        src={homebg}
+        alt="alt"
+        className="w-full absolute top-0 h-[80vh]"
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover",
+          objectPosition: "center"
+        }} />
       <div className="absolute top-0 w-full h-[80vh] bg-gradient-to-t from-transparent to-red-950 opacity-50 z-10"></div>
         <div className="flex flex-col gap-4 justify-center items-center w-full h-[80vh]">
           <h1 className="text-white font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10">
@@ -33,7 +42,15 @@ export default function page() {
       </div>
       <div className="grid xl:grid-cols-3 grid-cols-1 gap-10 padding pb-20">
         <div className="flex flex-col gap-3 items-start justify-center">
-          <Image src={contatti1} alt="alt" width={400} height={400} />
+          <Image
+            src={contatti1}
+            alt="alt"
+            width={400}
+            height={400}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
           <span className="font-extrabold text-xl">Indirizzo: </span>
           <Link
             className="hover:underline"
@@ -44,7 +61,15 @@ export default function page() {
           </Link>
         </div>
         <div className="flex flex-col gap-3 items-start">
-          <Image src={contatti2} alt="alt" width={400} height={400} />
+          <Image
+            src={contatti2}
+            alt="alt"
+            width={400}
+            height={400}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
           <span className="font-extrabold text-xl">Email: </span>
           <Link href="mailto:info@dimarcosrl.it" className="hover:underline">
             info@dimarcosrl.it
@@ -54,7 +79,15 @@ export default function page() {
           </Link>
         </div>
         <div className="flex flex-col gap-3 items-start">
-          <Image src={contatti3} alt="alt" width={400} height={400} />
+          <Image
+            src={contatti3}
+            alt="alt"
+            width={400}
+            height={400}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
           <span className="font-extrabold text-xl">Telefono: </span>
           <Link href="tel:0872927687" className="hover:underline">
             +39 0872 92 76 87

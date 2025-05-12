@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import about1 from "../../../../public/about1.jpg";
 import { PiWindowsLogoFill } from "react-icons/pi";
 import { LiaWindows } from "react-icons/lia";
@@ -27,7 +27,10 @@ export default function About() {
             width={400}
             height={500}
             className="rounded-t-full z-10 shadow-2xl shadow-red-950"
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
           <div className="absolute bottom-10 right-20 z-20 gap-2 flex flex-col border-10 border-white rounded-t-full items-center p-10 bg-primary">
             <span className="text-5xl font-bold text-white">98%</span>
             <span className="font-bold text-white text-center">

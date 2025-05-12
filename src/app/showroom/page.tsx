@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 import homebg from "../../../public/showroom/showroom17.jpeg";
@@ -62,11 +62,13 @@ export default function page() {
         <Image
           src={homebg}
           alt="alt"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
           className="w-full absolute top-0 h-[80vh]"
-        />
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+            objectPosition: "center"
+          }} />
         <div className="absolute top-0 w-full h-[80vh] bg-gradient-to-t from-transparent to-red-950 opacity-50 z-10"></div>
         <div className="flex flex-col gap-4 justify-center items-center w-full h-[80vh]">
           <h1 className="text-white font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10">
@@ -92,12 +94,16 @@ export default function page() {
                 width={500}
                 height={500}
                 className="cursor-pointer rounded-lg shadow-lg mb-4"
-                style={{ display: "block", width: "100%" }}
                 onClick={() => {
                   setPhotoIndex(index);
                   setIsOpen(true);
                 }}
-              />
+                style={{
+                  display: "block",
+                  width: "100%",
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
           ))}
         </Masonry>

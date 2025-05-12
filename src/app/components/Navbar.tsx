@@ -12,7 +12,7 @@ import { GiPositionMarker } from "react-icons/gi";
 import { MdMarkEmailUnread } from "react-icons/md";
 import logobianco from "./../../../public/logobianco.png";
 import logo from "./../../../public/logodimarco.png";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { CiBurger } from "react-icons/ci";
 import { IoMenu } from "react-icons/io5";
@@ -76,7 +76,15 @@ export default function Navbar() {
         className={`${stickyClass} w-full h-[12vh] font-[family-name:var(--font-plus-jakarta-sans)] flex flex-row items-center justify-between padding`}
       >
         <Link href="/" className=" flex items-center justify-end">
-          <Image src={logo} alt="alt" width={200} height={400} />
+          <Image
+            src={logo}
+            alt="alt"
+            width={200}
+            height={400}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </Link>
         <div className="hidden xl:flex flex-row justify-center items-center gap-10 text-lg font-semibold">
           <Link href="/">Home</Link>
@@ -100,7 +108,15 @@ export default function Navbar() {
       {mobileMenuOpened && (
         <div className="flex flex-col h-screen fixed top-0 w-full xl:hidden bg-gradient-to-b text-white from-black to-red-950 items-center justify-center gap-10 text-2xl font-semibold z-50">
           <Link href="/" onClick={() => setMobileMenuOpened(false)}>
-            <Image src={logobianco} alt="alt" width={200} height={400} />
+            <Image
+              src={logobianco}
+              alt="alt"
+              width={200}
+              height={400}
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </Link>
           <Link href="/" onClick={() => setMobileMenuOpened(false)}>
             Home

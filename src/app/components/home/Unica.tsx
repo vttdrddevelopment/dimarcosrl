@@ -1,10 +1,18 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import bgUnica from "../../../../public/background-unica.jpg"
 
 export default function Unica() {
   return (
     <div className="flex lg:h-[60vh] h-[80vh] flex-col lg:flex-row relative justify-center gap-10 padding py-10">
-      <Image src={bgUnica} alt="alt" layout="fill" objectFit="cover"  className="w-full absolute top-0 lg:h-[60vh] h-[80vh]"/>
+      <Image
+        src={bgUnica}
+        alt="alt"
+        className="w-full absolute top-0 lg:h-[60vh] h-[80vh]"
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover"
+        }} />
       <div className="flex flex-col lg:w-1/2 justify-center lg:items-start items-center">
         <h1 className="xl:text-[120px] lg:text-[100px] md:text-[80px] text-[60px] uppercase text-white font-semibold z-20">
           Unica

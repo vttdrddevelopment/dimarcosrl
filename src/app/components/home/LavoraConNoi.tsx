@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import lavoraconnoi1 from "../../../../public/lavoraconnoi2.png";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
@@ -10,10 +10,12 @@ export default function LavoraConNoi() {
       <Image
         src={lavoraconnoi1}
         alt="alt"
-        layout="fill"
-        objectFit="cover"
         className="absolute top-0 left-0"
-      />
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover"
+        }} />
       <div className="absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-transparent to-red-950 opacity-70 z-10 padding"></div>
       <div className="absolute text-white bg-black/60 shadow-2xl shadow-white lg:rounded-2xl bg-opacity-10 p-10 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 flex flex-col gap-4 justify-evenly lg:w-1/2 w-full z-20">
         <span className="uppercase font-bold text-primary md:text-base text-sm">

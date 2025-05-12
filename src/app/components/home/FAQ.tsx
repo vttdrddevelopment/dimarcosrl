@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import faq1 from "../../../../public/faq2.png";
 import background from "../../../../public/background.jpg";
 export default function FAQ() {
@@ -7,10 +7,12 @@ export default function FAQ() {
       <Image
         src={background}
         alt="alt"
-        layout="fill"
-        objectFit="cover"
         className="w-full absolute top-0 h-full"
-      />
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover"
+        }} />
       <div className="absolute top-0 left-0 w-full h-full bg-gray-300 opacity-65 z-10"></div>
       <div className="lg:w-1/2 flex justify-center items-center relative pt-10">
         <Image
@@ -19,7 +21,10 @@ export default function FAQ() {
           width={600}
           height={500}
           className="rounded-t-full z-10 shadow-2xl shadow-red-950"
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
       <div className="flex flex-col justify-evenly lg:w-1/2 z-20">
         <span className="uppercase font-bold text-black md:text-base text-sm">
