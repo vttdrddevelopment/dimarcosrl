@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import team1 from "../../../public/team1.jpg";
+import giuseppe from "../../../public/team/giuseppe.jpeg";
+import loris from "../../../public/team/loris.jpeg";
+import maurizio from "../../../public/team/maurizio.jpeg";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhone } from "react-icons/fa";
 
 import homebg from "../../../public/chisiamobg.jpg"
@@ -53,7 +55,7 @@ export default function ChiSiamo() {
       <div className="grid xl:grid-cols-3 grid-cols-1 gap-4 padding pb-20">
         <div className="flex flex-col gap-3 items-center">
           <Image
-            src={team1}
+            src={maurizio}
             alt="alt"
             width={400}
             height={400}
@@ -74,7 +76,7 @@ export default function ChiSiamo() {
         </div>
         <div className="flex flex-col gap-3 items-center">
           <Image
-            src={team1}
+            src={giuseppe}
             alt="alt"
             width={400}
             height={400}
@@ -95,7 +97,7 @@ export default function ChiSiamo() {
         </div>
         <div className="flex flex-col gap-3 items-center">
           <Image
-            src={team1}
+            src={loris}
             alt="alt"
             width={400}
             height={400}

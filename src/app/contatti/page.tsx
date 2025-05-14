@@ -71,11 +71,8 @@ export default function page() {
               height: "auto"
             }} />
           <span className="font-extrabold text-xl">Email: </span>
-          <Link href="mailto:info@dimarcosrl.it" className="hover:underline">
-            info@dimarcosrl.it
-          </Link>
-          <Link href="mailto:info@dimarcosrl.it" className="hover:underline">
-            info@dimarcosrl.it
+          <Link href="mailto:info@dimarcoinfissi.it" className="hover:underline">
+            info@dimarcoinfissi.it
           </Link>
         </div>
         <div className="flex flex-col gap-3 items-start">
@@ -90,10 +87,7 @@ export default function page() {
             }} />
           <span className="font-extrabold text-xl">Telefono: </span>
           <Link href="tel:0872927687" className="hover:underline">
-            +39 0872 92 76 87
-          </Link>
-          <Link href="tel:3297875231" className="hover:underline">
-            +39 329 78 75 231
+            0872 982669
           </Link>
         </div>
       </div>
@@ -101,10 +95,10 @@ export default function page() {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d47349.63158281101!2d14.26296909345377!3d42.1213476310926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1330f97eaf4732fd%3A0x1d18aae22aa2e2a3!2sVia%20Selva%20Piana%2C%2057%2C%2066043%20Casoli%20CH!3m2!1d42.121355!2d14.3041685!5e0!3m2!1sen!2sit!4v1742375839748!5m2!1sen!2sit"
           loading="lazy"
-          className="w-full xl:h-[90vh] h-[60vh] xl:absolute xl:top-0"
+          className="w-4/5 xl:h-[90vh] h-[60vh] xl:absolute xl:top-0"
           title="mappa"
         ></iframe>
-        <div className="xl:absolute flex flex-col gap-4 items-center xl:bottom-1/2 xl:px-10 xl:py-20 py-10 xl:translate-y-1/2 xl:right-20 bg-white lg:w-1/3 h-[70vh]">
+        <div className="xl:absolute border border-primary rounded shadow-2xl flex flex-col gap-4 items-center xl:bottom-1/2 xl:px-10 xl:py-20 py-10 xl:translate-y-1/2 xl:right-20 bg-white lg:w-1/3 h-[70vh]">
           <span className="uppercase font-bold text-primary md:text-base text-sm">
             contattaci
           </span>

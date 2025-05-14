@@ -37,8 +37,9 @@ export default function Footer() {
             height={300}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
           <span className="text-white text-lg">
             Dal 1970, qualità e attenzione per offrirti il meglio
           </span>
@@ -64,15 +65,23 @@ export default function Footer() {
           <div className="flex flex-col lg:gap-8 gap-4 text-lg text-white">
             <div className="flex flex-row items-center gap-2">
               <MdMarkEmailUnread size={25} />
-              <span>email@dimarcosrl.it</span>
+              <span>info@dimarcoinfissi.it</span>
             </div>
             <div className="flex flex-row items-center gap-2">
               <FaPhoneVolume size={25} />
-              <span>+39 0983729717</span>
+              <Link href="tel:0872927687" className="hover:underline">
+                0872 982669
+              </Link>
             </div>
             <div className="flex flex-row items-center gap-2">
               <GiPositionMarker size={25} />
-              <span>email@dimarcosrl.it</span>
+              <Link
+                className="hover:underline"
+                href="https://maps.app.goo.gl/8GcaRzc337HLzfiBA"
+                target="blank"
+              >
+                Via Selva Piana, 57, 66043 Casoli CH
+              </Link>
             </div>
           </div>
         </div>

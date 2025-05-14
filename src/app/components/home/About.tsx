@@ -1,5 +1,6 @@
 import Image from "next/image";
-import about1 from "../../../../public/about1.jpg";
+import officina1 from "../../../../public/officina1.jpeg";
+import officina2 from "../../../../public/officina2.jpeg";
 import { PiWindowsLogoFill } from "react-icons/pi";
 import { LiaWindows } from "react-icons/lia";
 
@@ -20,18 +21,28 @@ export default function About() {
   return (
     <>
       <div className="flex flex-col lg:flex-row justify-center gap-10 padding py-10">
-        <div className="lg:w-1/2 flex justify-center items-center relative pt-10">
+        <div className="lg:w-1/2 flex justify-start items-center relative pt-10">
           <Image
-            src={about1}
+            src={officina2}
             alt="alt"
-            width={400}
+            width={550}
             height={500}
-            className="rounded-t-full z-10 shadow-2xl shadow-red-950"
+            className="rounded-t-full z-10 shadow-2xl shadow-red-950 mb-10"
             style={{
               maxWidth: "100%",
               height: "auto"
             }} />
-          <div className="absolute bottom-10 right-20 z-20 gap-2 flex flex-col border-10 border-white rounded-t-full items-center p-10 bg-primary">
+            <Image
+            src={officina1}
+            alt="alt"
+            width={500}
+            height={500}
+            className="absolute bottom-0 right-0 z-20 gap-2 flex flex-col border-5 border-white rounded-t-full items-center"
+            style={{
+              maxWidth: "40%",
+              height: "auto"
+            }} />
+          {/* <div className="absolute bottom-10 right-20 z-20 gap-2 flex flex-col border-10 border-white rounded-t-full items-center p-10 bg-primary">
             <span className="text-5xl font-bold text-white">98%</span>
             <span className="font-bold text-white text-center">
               Clienti <br /> Contenti
@@ -40,7 +51,7 @@ export default function About() {
           <PiWindowsLogoFill
             size={220}
             className="absolute top-0 left-0 z-0 text-gray-200"
-          />
+          /> */}
         </div>
         <div className="flex flex-col gap-4 justify-evenly lg:w-1/2">
           <span className="uppercase font-bold text-primary md:text-base text-sm">

@@ -62,7 +62,7 @@ export default function Navbar() {
         <div className="flex flex-row items-center gap-2 text-xs md:text-sm">
           <MdMarkEmailUnread size={20} />
           <Link href="mailto:info@dimarcosrl.it" className="hover:underline">
-            info@dimarcosrl.it
+            info@dimarcoinfissi.it
           </Link>
         </div>
         <div className="flex flex-row justify-start items-centerxs">
