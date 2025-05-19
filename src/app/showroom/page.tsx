@@ -11,7 +11,6 @@ import Link from "next/link";
 import Masonry from "react-masonry-css";
 
 const images = [
-  "/showroom/showroom1.jpeg",
   "/showroom/showroom2.jpeg",
   "/showroom/showroom3.jpeg",
   "/showroom/showroom4.jpeg",
@@ -26,14 +25,10 @@ const images = [
   "/showroom/showroom13.jpeg",
   "/showroom/showroom14.jpeg",
   "/showroom/showroom15.jpeg",
-  "/showroom/showroom16.jpeg",
+  "/showroom/showroom23.jpeg",
   "/showroom/showroom17.jpeg",
   "/showroom/showroom18.jpeg",
   "/showroom/showroom19.jpeg",
-  "/showroom/showroom20.jpeg",
-  "/showroom/showroom21.jpeg",
-  "/showroom/showroom22.jpeg",
-  "/showroom/showroom23.jpeg",
 ];
 
 export default function page() {

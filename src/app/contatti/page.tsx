@@ -11,17 +11,18 @@ export default function page() {
   return (
     <div className="font-[family-name:var(--font-plus-jakarta-sans)]">
       <div className="grid grid-rows-[20px_1fr_20px] relative h-[80vh] p-8 pb-20 gap-16 padding">
-      <Image
-        src={homebg}
-        alt="alt"
-        className="w-full absolute top-0 h-[80vh]"
-        fill
-        sizes="100vw"
-        style={{
-          objectFit: "cover",
-          objectPosition: "center"
-        }} />
-      <div className="absolute top-0 w-full h-[80vh] bg-gradient-to-t from-transparent to-red-950 opacity-50 z-10"></div>
+        <Image
+          src={homebg}
+          alt="alt"
+          className="w-full absolute top-0 h-[80vh]"
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+            objectPosition: "center",
+          }}
+        />
+        <div className="absolute top-0 w-full h-[80vh] bg-gradient-to-t from-transparent to-red-950 opacity-50 z-10"></div>
         <div className="flex flex-col gap-4 justify-center items-center w-full h-[80vh]">
           <h1 className="text-white font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10">
             Contatti
@@ -49,8 +50,9 @@ export default function page() {
             height={400}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
           <span className="font-extrabold text-xl">Indirizzo: </span>
           <Link
             className="hover:underline"
@@ -68,10 +70,14 @@ export default function page() {
             height={400}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
           <span className="font-extrabold text-xl">Email: </span>
-          <Link href="mailto:info@dimarcoinfissi.it" className="hover:underline">
+          <Link
+            href="mailto:info@dimarcoinfissi.it"
+            className="hover:underline"
+          >
             info@dimarcoinfissi.it
           </Link>
         </div>
@@ -83,8 +89,9 @@ export default function page() {
             height={400}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
           <span className="font-extrabold text-xl">Telefono: </span>
           <Link href="tel:0872927687" className="hover:underline">
             0872 982669
@@ -93,10 +100,11 @@ export default function page() {
       </div>
       <div className="xl:relative w-full xl:h-[90vh] pb-10">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d47349.63158281101!2d14.26296909345377!3d42.1213476310926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1330f97eaf4732fd%3A0x1d18aae22aa2e2a3!2sVia%20Selva%20Piana%2C%2057%2C%2066043%20Casoli%20CH!3m2!1d42.121355!2d14.3041685!5e0!3m2!1sen!2sit!4v1742375839748!5m2!1sen!2sit"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5918.703259525847!2d14.304169!3d42.121355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1330f97eaf4732fd%3A0x1d18aae22aa2e2a3!2sDi%20Marco%20Srl!5e0!3m2!1sen!2sit!4v1747488867486!5m2!1sen!2sit"
+          width="600"
+          height="450"
+          className="w-full xl:h-[90vh] h-[60vh] xl:absolute xl:top-0"
           loading="lazy"
-          className="w-4/5 xl:h-[90vh] h-[60vh] xl:absolute xl:top-0"
-          title="mappa"
         ></iframe>
         <div className="xl:absolute border border-primary rounded shadow-2xl flex flex-col gap-4 items-center xl:bottom-1/2 xl:px-10 xl:py-20 py-10 xl:translate-y-1/2 xl:right-20 bg-white lg:w-1/3 h-[70vh]">
           <span className="uppercase font-bold text-primary md:text-base text-sm">

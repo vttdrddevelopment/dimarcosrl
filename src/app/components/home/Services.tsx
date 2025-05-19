@@ -1,6 +1,6 @@
 import { LiaWindows } from "react-icons/lia";
 import background from "../../../../public/background.jpg";
-import service1 from "../../../../public/service1.png";
+import service1 from "../../../../public/sezioneFinestra.png";
 
 import Image from "next/image";
 import { RiCustomerService2Line, RiCustomSize } from "react-icons/ri";

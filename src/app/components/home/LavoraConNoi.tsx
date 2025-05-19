@@ -54,7 +54,7 @@ export default function LavoraConNoi() {
           </div>
         </div>
         <Link
-          href="/lavori"
+          href="/contatti"
           className="px-3 py-3 w-[150px] bg-primary text-white font-semibold z-20 md:text-base text-sm text-center"
         >
           Scopri Di Più
@@ -69,7 +69,7 @@ export default function LavoraConNoi() {
             <span className="md:text-base text-sm">Soluzioni fornite</span>
           </div>
           <div className="flex flex-col w-full">
-            <span className="md:text-xl font-bold">30+</span>
+            <span className="md:text-xl font-bold">50+</span>
             <span className="md:text-base text-sm">Anni di esperienza</span>
           </div>
         </div>

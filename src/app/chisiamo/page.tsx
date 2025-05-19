@@ -67,10 +67,17 @@ export default function ChiSiamo() {
           <span>Amministratore Delegato</span>
           <div className="flex flex-row gap-6">
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <FaPhone size={20} />
+              <Link href="tel:0872927687" className="hover:underline">
+                <FaPhone size={20} />
+              </Link>
             </div>
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <MdEmail size={20} />
+              <Link
+                href="mailto:info@dimarcoinfissi.it"
+                className="hover:underline"
+              >
+                <MdEmail size={20} />
+              </Link>
             </div>
           </div>
         </div>
@@ -88,10 +95,17 @@ export default function ChiSiamo() {
           <span>Responsabile commerciale</span>
           <div className="flex flex-row gap-6">
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <FaPhone size={20} />
+              <Link href="tel:0872927687" className="hover:underline">
+                <FaPhone size={20} />
+              </Link>
             </div>
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <MdEmail size={20} />
+              <Link
+                href="mailto:info@dimarcoinfissi.it"
+                className="hover:underline"
+              >
+                <MdEmail size={20} />
+              </Link>
             </div>
           </div>
         </div>
@@ -109,10 +123,17 @@ export default function ChiSiamo() {
           <span>Responsabile tecnico</span>
           <div className="flex flex-row gap-6">
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <FaPhone size={20} />
+              <Link href="tel:0872927687" className="hover:underline">
+                <FaPhone size={20} />
+              </Link>
             </div>
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <MdEmail size={20} />
+              <Link
+                href="mailto:info@dimarcoinfissi.it"
+                className="hover:underline"
+              >
+                <MdEmail size={20} />
+              </Link>
             </div>
           </div>
         </div>

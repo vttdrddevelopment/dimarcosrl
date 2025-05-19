@@ -8,6 +8,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaPhoneVolume,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { GiPositionMarker } from "react-icons/gi";
@@ -44,9 +45,15 @@ export default function Footer() {
             Dal 1970, qualità e attenzione per offrirti il meglio
           </span>
           <div className="flex flex-row justify-start items-center gap-10 text-xl font-semibold">
-            <FaFacebook className="text-white" size={25} />
-            <FaInstagram className="text-white" size={25} />
-            <FaLinkedin className="text-white" size={25} />
+            <Link href="https://www.facebook.com/dimarcoinfissi" target="blank">
+              <FaFacebook color="white" />
+            </Link>
+            <Link href="https://www.instagram.com/dimarcosrl/" target="blank">
+              <FaInstagram color="white" />
+            </Link>
+            <Link href="https://wa.me/+393271226348" target="blank">
+              <FaWhatsapp color="white" />
+            </Link>
           </div>
         </div>
         <div className="flex flex-col gap-4 items-center">
@@ -65,7 +72,12 @@ export default function Footer() {
           <div className="flex flex-col lg:gap-8 gap-4 text-lg text-white">
             <div className="flex flex-row items-center gap-2">
               <MdMarkEmailUnread size={25} />
-              <span>info@dimarcoinfissi.it</span>
+              <Link
+                href="mailto:info@dimarcoinfissi.it"
+                className="hover:underline"
+              >
+                info@dimarcoinfissi.it
+              </Link>
             </div>
             <div className="flex flex-row items-center gap-2">
               <FaPhoneVolume size={25} />

@@ -61,7 +61,7 @@ export default function Navbar() {
         </div>
         <div className="flex flex-row items-center gap-2 text-xs md:text-sm">
           <MdMarkEmailUnread size={20} />
-          <Link href="mailto:info@dimarcosrl.it" className="hover:underline">
+          <Link href="mailto:info@dimarcoinfissi.it" className="hover:underline">
             info@dimarcoinfissi.it
           </Link>
         </div>
@@ -95,9 +95,15 @@ export default function Navbar() {
           <Link href="/contatti">Contatti</Link>
         </div>
         <div className="hidden xl:flex flex-row justify-start items-center gap-10 text-xl font-semibold">
-          <FaFacebook />
-          <FaInstagram />
-          <FaWhatsapp />
+          <Link href="https://www.facebook.com/dimarcoinfissi" target="blank">
+            <FaFacebook />
+          </Link>
+          <Link href="https://www.instagram.com/dimarcosrl/" target="blank">
+            <FaInstagram />
+          </Link>
+          <Link href="https://wa.me/+393271226348" target="blank">
+            <FaWhatsapp />
+          </Link>
         </div>
         <PiWindowsLogoFill
           size={40}

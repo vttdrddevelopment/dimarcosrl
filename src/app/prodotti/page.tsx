@@ -30,8 +30,9 @@ export default function page() {
           sizes="100vw"
           style={{
             objectFit: "cover",
-            objectPosition: "center"
-          }} />
+            objectPosition: "center",
+          }}
+        />
         <div className="absolute top-0 w-full h-[80vh] bg-gradient-to-t from-transparent to-red-950 opacity-50 z-10"></div>
         <div className="flex flex-col gap-4 justify-center items-center w-full h-[80vh]">
           <h1 className="text-white font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10">
@@ -73,8 +74,9 @@ export default function page() {
             className="rounded-xl shadow-2xl shadow-red-300"
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </div>
         <div className="flex lg:flex-row flex-col items-center justify-between gap-10 mt-20">
           <Image
@@ -85,8 +87,9 @@ export default function page() {
             className="rounded-xl shadow-2xl shadow-red-300 lg:flex hidden"
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
           <div className="flex flex-col gap-5">
             <h3 className="font-bold xl:text-[53px] lg:text-[50px] md:text-[40px] text-[30px] xl:leading-14 lg:leading-12 leading-8 capitalize">
               Infissi scorrevoli in alluminio
@@ -109,8 +112,9 @@ export default function page() {
             className="rounded-xl shadow-2xl shadow-red-300 lg:hidden flex mb-10"
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </div>
         <div className="flex lg:flex-row flex-col items-center justify-between gap-10">
           <div className="flex flex-col gap-5">
@@ -119,15 +123,14 @@ export default function page() {
             </h3>
             <span className="md:text-base text-sm">
               Tecnica e design in perfetta armonia, con modelli, versioni e
-              colori adattabili a ogni stile architettonico. La finestra Living
-              MD, con profilo a 7 camere isolanti e 3 guarnizioni, offre
-              prestazioni eccellenti per il massimo comfort abitativo, così come
-              quella CT70, che invece è a 5 camere e con un telaio leggermente
-              più sottile. Certificate da istituti indipendenti, garantiscono
-              alti standard di permeabilità all'aria, tenuta all'acqua,
-              resistenza al vento, isolamento termico e acustico, e sicurezza.
-              Ogni infisso è conforme alle normative CE, assicurando qualità e
-              affidabilità.
+              colori adattabili a ogni stile architettonico. Gli infissi in PVC
+              proposti offrono profili multi-camera e guarnizioni evolute,
+              garantendo prestazioni eccellenti per il massimo comfort
+              abitativo. Certificate da istituti indipendenti, le nostre
+              soluzioni assicurano alti standard di permeabilità all’aria,
+              tenuta all’acqua, resistenza al vento, isolamento termico e
+              acustico, oltre a elevati livelli di sicurezza. Ogni infisso è
+              conforme alle normative CE, sinonimo di qualità e affidabilità.
             </span>
           </div>
           <Image
@@ -138,8 +141,9 @@ export default function page() {
             className="rounded-xl shadow-2xl shadow-red-300"
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </div>
         <div className="w-full flex flex-col gap-20">
           <h1 className="w-full font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10 lg:mt-25 mt-16 uppercase text-center">
@@ -169,8 +173,9 @@ export default function page() {
               className="rounded-xl shadow-2xl shadow-red-300"
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className="flex lg:flex-row flex-col items-center gap-10 justify-between">
             <Image
@@ -181,8 +186,9 @@ export default function page() {
               className="rounded-xl shadow-2xl shadow-red-300 lg:flex hidden"
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
             <h3 className="font-bold xl:text-[53px] lg:text-[50px] md:text-[40px] text-[30px] xl:leading-14 lg:leading-12 leading-8 capitalize">
               Tapparelle Coibentate
             </h3>
@@ -194,8 +200,9 @@ export default function page() {
               className="rounded-xl shadow-2xl shadow-red-300 lg:hidden flex"
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className="flex lg:flex-row flex-col items-center gap-10 justify-between">
             <h3 className="font-bold xl:text-[53px] lg:text-[50px] md:text-[40px] text-[30px] xl:leading-14 lg:leading-12 leading-8 capitalize">
@@ -209,8 +216,9 @@ export default function page() {
               className="rounded-xl shadow-2xl shadow-red-300"
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className="flex lg:flex-row flex-col items-center gap-10 justify-between">
             <Image
@@ -221,8 +229,9 @@ export default function page() {
               className="rounded-xl shadow-2xl shadow-red-300 lg:flex hidden"
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
             <h3 className="font-bold xl:text-[53px] lg:text-[50px] md:text-[40px] text-[30px] xl:leading-14 lg:leading-12 leading-8 capitalize">
               Frangisole e Zanzariere
             </h3>
@@ -234,8 +243,9 @@ export default function page() {
               className="rounded-xl shadow-2xl shadow-red-300 lg:hidden flex"
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
         </div>
         <div className="w-full flex flex-col gap-20">
@@ -266,8 +276,9 @@ export default function page() {
               className="rounded-xl shadow-2xl shadow-red-300"
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className="flex lg:flex-row flex-col items-center gap-10 justify-between">
             <Image
@@ -278,8 +289,9 @@ export default function page() {
               className="rounded-xl shadow-2xl shadow-red-300 lg:flex hidden"
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
             <h3 className="font-bold xl:text-[53px] lg:text-[50px] md:text-[40px] text-[30px] xl:leading-14 lg:leading-12 leading-8 capitalize">
               basculanti
             </h3>
@@ -291,8 +303,9 @@ export default function page() {
               className="rounded-xl shadow-2xl shadow-red-300 lg:hidden flex"
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className="flex lg:flex-row flex-col items-center gap-10 justify-between">
             <h3 className="font-bold xl:text-[53px] lg:text-[50px] md:text-[40px] text-[30px] xl:leading-14 lg:leading-12 leading-8 capitalize">
@@ -306,8 +319,9 @@ export default function page() {
               className="rounded-xl shadow-2xl shadow-red-300"
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
         </div>
         <div className="w-full flex flex-col gap-20">
@@ -339,8 +353,9 @@ export default function page() {
               className="rounded-xl shadow-2xl shadow-red-300"
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
         </div>
       </div>
