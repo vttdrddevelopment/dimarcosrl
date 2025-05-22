@@ -45,11 +45,11 @@ export default function ChiSiamo() {
               Incontra gli esperti
             </h1>
           </div>
-          <span className="md:text-base text-sm lg:w-1/2 mt-6 lg:mt-0">
+          {/* <span className="md:text-base text-sm lg:w-1/2 mt-6 lg:mt-0">
             Partner with a company dedicated to excellence in window and door
             installations, ensuring each project is handled with precision and
             care.
-          </span>
+          </span> */}
         </div>
       </div>
       <div className="grid xl:grid-cols-3 grid-cols-1 gap-4 padding pb-20">

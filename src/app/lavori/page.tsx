@@ -50,7 +50,7 @@ const Lavori = () => {
                 style={{
                   objectFit: "cover"
                 }} />
-              <span className="text-white font-bold text-xl z-30 absolute bottom-10 left-10">
+              <span className="text-white font-bold text-xl z-30 absolute bottom-10 px-5">
                 {l.nome}
               </span>
               <div className="absolute top-0 bg-black opacity-35 h-[500px] w-full"></div>
