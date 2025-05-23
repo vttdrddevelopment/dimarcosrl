@@ -81,7 +81,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-row items-center gap-2">
               <FaPhoneVolume size={25} />
-              <Link href="tel:0872927687" className="hover:underline">
+              <Link href="tel:+390872927687" className="hover:underline">
                 0872 982669
               </Link>
             </div>

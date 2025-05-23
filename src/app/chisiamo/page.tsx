@@ -67,7 +67,7 @@ export default function ChiSiamo() {
           <span>Amministratore Delegato</span>
           <div className="flex flex-row gap-6">
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <Link href="tel:0872927687" className="hover:underline">
+              <Link href="tel:+390872982669" className="hover:underline">
                 <FaPhone size={20} />
               </Link>
             </div>
@@ -95,7 +95,7 @@ export default function ChiSiamo() {
           <span>Responsabile commerciale</span>
           <div className="flex flex-row gap-6">
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <Link href="tel:0872927687" className="hover:underline">
+              <Link href="tel:+393271226348" className="hover:underline">
                 <FaPhone size={20} />
               </Link>
             </div>
@@ -123,7 +123,7 @@ export default function ChiSiamo() {
           <span>Responsabile tecnico</span>
           <div className="flex flex-row gap-6">
             <div className="p-3 rounded-full bg-gray-200 hover:bg-primary text-primary hover:text-gray-200 hover:cursor-pointer">
-              <Link href="tel:0872927687" className="hover:underline">
+              <Link href="tel:+393271226348" className="hover:underline">
                 <FaPhone size={20} />
               </Link>
             </div>
