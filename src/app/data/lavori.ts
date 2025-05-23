@@ -28,7 +28,7 @@ export let lavori: Lavoro[] = [
         id: 1,
         nome: "Infissi e persiane - Borgo Marino Pescara",
         mainImage: "/lavori/borgoMarino/borgoMarino.jpg",
-        homePage: true,
+        homePage: false,
         images: [
             "/lavori/borgoMarino/borgoMarino.jpg", 
             "/lavori/borgoMarino/borgoMarino1.jpg",
@@ -67,7 +67,7 @@ export let lavori: Lavoro[] = [
         id: 4,
         nome: "Vetrofacciata - Pescara",
         mainImage: "/lavori/lavoro3.jpg",
-        homePage: false,
+        homePage: true,
         images: [
             
         ]
@@ -101,7 +101,7 @@ export let lavori: Lavoro[] = [
     },
     {
         id: 8,
-        nome: "Infissi e ringhiere alluminio-vetro - edificio commerciale Casoli",
+        nome: "Infissi alluminio-vetro - edificio commerciale Casoli",
         mainImage: "/lavori/commercialeCasoli/commercialeCasoli1.jpg",
         homePage: false,
         images: [
@@ -114,7 +114,7 @@ export let lavori: Lavoro[] = [
     },
     {
         id: 9,
-        nome: "Infissi e ringhiere alluminio-vetro - edificio commerciale Casoli",
+        nome: "Vetrata locale commerciale - Casoli",
         mainImage: "/lavori/commercialeCasoli2/commercialeCasoli21.jpg",
         homePage: false,
         images: [
