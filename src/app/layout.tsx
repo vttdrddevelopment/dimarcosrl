@@ -20,8 +20,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Di Marco s.r.l.",
-  description: "Infissi in alluminio e PVC",
+  title: "Di Marco Infissi - Casoli",
+  description: "Infissi in alluminio e PVC, Casoli, Abruzzo",
+  keywords: ["infissi", "casoli", "abruzzo", "finestre", "alluminio", "pvc", "Di Marco", "infissi casoli", "infissi dimarco", "finestre casoli", "infissi abruzzo", "finestre abruzzo"]
 };
 
 export default function RootLayout({
