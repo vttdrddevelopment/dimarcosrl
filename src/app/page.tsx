@@ -7,6 +7,7 @@ import Galleria from "./components/home/Galleria";
 import FAQ from "./components/home/FAQ";
 import Unica from "./components/home/Unica";
 import { ParallaxProvider } from "react-scroll-parallax";
+import CookieConsentBanner from "./components/cookie/CookieConsentBanner";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Unica/>
         <Galleria/>
         <FAQ/>
+        <CookieConsentBanner/>
       </main>
     </ParallaxProvider>
   );

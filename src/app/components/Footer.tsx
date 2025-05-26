@@ -102,8 +102,12 @@ export default function Footer() {
         </div>
       </div>
       <hr className="my-10 text-gray-600" />
-      <div className="flex flex-row justify-center items-center w-full text-white">
-        <span>Copyright © {new Date().getFullYear()} All Rights Reserved.</span>
+      <div className="flex flex-col gap-2 justify-center items-center w-full text-white">
+        <span>Copyright © {new Date().getFullYear()} All Rights Reserved </span>
+        <div className="flex flex-row gap-2">
+          <Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link>-
+          <Link href="/coockie-policy" className="hover:underline">Coockie Policy</Link>
+        </div>
       </div>
     </div>
   );
