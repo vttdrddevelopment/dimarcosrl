@@ -10,7 +10,7 @@ export let lavori: Lavoro[] = [
     {
         id: 6,
         nome: "Vetrofacciate e infissi - Scutti SRL Casoli",
-        mainImage: "/lavori/scuttiCasoli/scuttiCasoli1.jpg",
+        mainImage: "/lavori/scuttiCasoli/scuttiCasoli3.jpg",
         homePage: true,
         images: [
             "/lavori/scuttiCasoli/scuttiCasoli1.jpg",
