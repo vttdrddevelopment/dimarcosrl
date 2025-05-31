@@ -22,6 +22,8 @@ export let lavori: Lavoro[] = [
             "/lavori/scuttiCasoli/scuttiCasoli7.jpg",
             "/lavori/scuttiCasoli/scuttiCasoli8.jpg",
             "/lavori/scuttiCasoli/scuttiCasoli9.jpg",
+            "/lavori/scuttiCasoli/scuttiCasoli10.jpg",
+            "/lavori/scuttiCasoli/scuttiCasoli11.jpg",
         ]
     },
     {
