@@ -32,7 +32,7 @@ export default function ChiSiamo() {
         <div className="embed-container">
           <iframe
             src="https://player.vimeo.com/video/1089294363?autoplay=1&loop=1"
-            title="finestra unica"
+            title="di marco infissi"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
           ></iframe>
