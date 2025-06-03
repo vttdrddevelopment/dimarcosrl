@@ -4,17 +4,22 @@ import Image from "next/image";
 import giuseppe from "../../../public/team/giuseppe.jpeg";
 import loris from "../../../public/team/loris.jpeg";
 import maurizio from "../../../public/team/maurizio.jpeg";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhone } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaPhone,
+} from "react-icons/fa";
 
-import homebg from "../../../public/chisiamobg.jpg"
+import homebg from "../../../public/chisiamobg.jpg";
 import LavoraConNoi from "@/app/components/home/LavoraConNoi";
 import { MdEmail } from "react-icons/md";
 
 export default function ChiSiamo() {
   return (
-    <div className="font-[family-name:var(--font-plus-jakarta-sans)]">
-      <div className="grid grid-rows-[20px_1fr_20px] relative h-[80vh] p-8 pb-20 gap-16 padding chisiamo">
-      <Image
+    <div className="font-[family-name:var(--font-plus-jakarta-sans)] flex flex-col">
+      <div className="grid grid-rows-[20px_1fr_20px] relative pb-20 gap-16 xl:h-[120vh] lg:h-[80vh] md:h-[60vh] h-[40vh]">
+        {/* <Image
         src={homebg}
         alt="alt"
         className="w-full absolute top-0 h-[80vh]"
@@ -23,8 +28,17 @@ export default function ChiSiamo() {
         style={{
           objectFit: "cover",
           objectPosition: "center"
-        }} />
-        <div className="absolute top-0 w-full h-[80vh] bg-gradient-to-b from-transparency to-red-950 opacity-50 z-10"></div>
+        }} /> */}
+        <div className="embed-container">
+          <iframe
+            src="https://player.vimeo.com/video/1089294363?autoplay=1&loop=1"
+            title="finestra unica"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+
+        {/* <div className="absolute top-0 w-full h-[80vh] bg-gradient-to-b from-transparency to-red-950 opacity-50 z-10"></div>
         <div className="flex flex-col gap-4 justify-center items-center w-full h-[50vh]">
           <h1 className="text-white font-bold xl:text-[85px] lg:text-[70px] md:text-[50px] text-[40px] z-20 xl:leading-20 lg:leading-16 leading-10">
             Chi Siamo
@@ -33,7 +47,7 @@ export default function ChiSiamo() {
             <Link href="/">Home</Link>
             <span> / Chi Siamo </span>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="w-full py-10 padding flex flex-col justify-center">
         <div className="flex lg:flex-row flex-col justify-between items-center z-20">
@@ -61,8 +75,9 @@ export default function ChiSiamo() {
             height={400}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
           <span className="font-extrabold text-xl">Maurizio Di Marco</span>
           <span>Amministratore Delegato</span>
           <div className="flex flex-row gap-6">
@@ -89,8 +104,9 @@ export default function ChiSiamo() {
             height={400}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
           <span className="font-extrabold text-xl">Giuseppe Scarci</span>
           <span>Responsabile commerciale</span>
           <div className="flex flex-row gap-6">
@@ -117,8 +133,9 @@ export default function ChiSiamo() {
             height={400}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
           <span className="font-extrabold text-xl">Loris Zacchigna</span>
           <span>Responsabile tecnico</span>
           <div className="flex flex-row gap-6">
@@ -138,7 +155,7 @@ export default function ChiSiamo() {
           </div>
         </div>
       </div>
-      <LavoraConNoi/>
+      <LavoraConNoi />
       {/* <div className="padding relative h-screen">
         <Image
           src={tabbg}
